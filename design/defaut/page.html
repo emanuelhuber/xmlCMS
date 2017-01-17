@@ -1,0 +1,23 @@
+
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<div id="chemin2fer">
+		<img src="design/ichthus/images/camp.png" alt="{L_VOUS_ETES_ICI}"/> 
+		<!-- BEGIN crumbs -->	
+			<!-- IF crumbs.IS_LINK -->
+			<a href="{crumbs.LINK}" title="{crumbs.TITLE}">{crumbs.NAME}</a>
+			<!-- ELSE -->
+				{crumbs.NAME}
+			<!-- ENDIF -->
+				<img src="design/ichthus/images/fleche_droite_rouge.gifc" alt="fleche rouge"/>
+		<!-- END crumbs -->
+		{CURRENT_CRUMB}
+	</div>
+	
+	{CONTENU_PRINCIPAL}
+
+	
+</div><!-- #principal -->

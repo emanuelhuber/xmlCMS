@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Connection]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[19.06.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[-1]]></droit>
+    <autorise-commentaire><![CDATA[0]]></autorise-commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette-simple.html" page="connection.html"/>
+  <contenu>
+    <users>
+      <user id="0" username="webmaster" groupname="administrateur" actif="oui" email="admin.admin@admin.admin" group="a4" droits="2147483647" logout="0" date="1484653697"><![CDATA[password]]></user>
+    </users>
+    <principal><![CDATA[]]></principal>
+    <secondaire><![CDATA[]]></secondaire>
+  </contenu>
+</page>

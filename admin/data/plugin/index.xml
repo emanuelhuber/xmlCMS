@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Index des plugins]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="plugin-index.html"/>
+  <contenu>
+    <principal><![CDATA[ ]]>
+	</principal>
+    <secondaire><![CDATA[	<h1>Qu'est-ce qu'un plugin ?</h1>
+		<p>Un plugin est un petit bout de code qui permet d'ajouter dans un contenu (une page, un article etc.)
+		un petit gadget qui n'est pas figé comme le texte du contenu : par exemple une carte google map ou bien
+		une citation aléatoire (qui change chaque jour). Bref, il s'agit d'un petit plus pour dynamiser votre
+		site.</p>
+		<p>Pour ajouter un plugin dans un contenu, il suffit de placer un code de ce type 
+		<code>%%%&nbsp;PLUGIN citationAleatoire:titre;1 %%%</code> dans le contenu. </p>
+		<p><code>%%%&nbsp;PLUGIN XXX %%%</code> indique qu'il y a un plugin.</p>
+		<p><code>citationAleatoire</code> indique le nom du plugin.</p>
+		<p><code>verset;2</code> indique les paramètres à passer au plugin.</p>
+				]]></secondaire>
+  </contenu>
+</page>

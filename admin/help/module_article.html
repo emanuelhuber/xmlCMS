@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : module article</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Module article</h1>
+
+	<p>Le module "article" est basé sur le module "page" : tout comme le module "page", il affiche un menu (à l'occasion
+	des chapitres). La différence est qu'il affiche un index d'articles (la collection d'article) ainsi que les articles choisis. 
+	Cependant, dans le menu seul le nom de la collection d'article est affiché.</p>
+	<p>Ce module est l'idéal pour un éditorial, pour des news...</p>
+	
+	<h2>Format de l'url</h2>
+	<h3>Collection d'articles (index)</h3>
+	<p>Quand on appelle la collection d'article qui affiche l'index des articles, l'url ressemble à cela&nbsp;:</p>
+	
+	<p><code>www.mon-site.com/fr,article,editorial.html</code></p>
+	<p>Dans ce cas, on appelle dans le module "article" la collection d'article nommée "editorial". Le serveur affiche 
+	la liste complète des articles (contenu principal) ainsi qu'un index thématique (contenu secondaire). Cet index thématique
+	permet d'afficher par exemple tous les articles contenant le même mot clef ou bien tous les articles écrits par le 
+	même auteur.</p>
+	<p><img class="center" alt="page internet simple" src="images/module_article_index.png"/></p>
+	
+	<h3>Article</h3>
+	<p>Quand on appelle un article d'une collection d'articles, l'url ressemble à cela&nbsp;:</p>
+	<p><img class="center" alt="page internet simple" src="images/module_article_article.png"/></p>
+	
+	<h2>Données du module article</h2>
+	
+	<p>Chaque article est sauvegardé dans un fichier <code>.xml</code> identique aux fichiers du module "page".</p>
+	
+	<p>Les données de la collection d'articles - c'est-à-dire l'index - sont stockés dans un fichier <code>/data/article/nom-de-la-collection/00-index.xml</code>.
+	Ce fichier est composé des parties suivantes :</p>
+	<ul>
+		<li>Les métadonnées associées à la collection d'article (tire, auteur, date, mots-clefs, description etc.)</li>
+		<li>Le design de la collection d'article</li>
+		<li>Les options (en l'occurence combien d'articles doivent être affichés par page)</li>
+		<li>Un chapeau qui présente la collection d'article</li>
+		<li>La liste des articles existants avec leur métadonnées (titre, mots-clefs, descriptions, auteur, date, droits etc.).</li>
+	</ul>
+	<p>Ce fichier ressemble à cela&nbsp;:</p>
+	<p><img class="center" alt="page internet simple" src="images/index-xml.png"/></p>
+
+	<p></p>
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

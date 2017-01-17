@@ -1,0 +1,31 @@
+<div id="secondaire">
+	<h1>Liste des encarts</h1>
+	<!-- BEGIN liste -->
+				<strong>{liste.ID}</strong>&nbsp;&nbsp;
+				<a href="{liste.EDIT_LINK}"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+				<a href="{liste.DELETE_LINK}"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+				<br/>
+	
+	<!-- END liste -->
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h1>Edition de l'encart "<code>{ID}</code>"</h1>
+
+	<form class="edit" name="editContent" method="POST" action="{FICHIER_CIBLE}">	
+			<fieldset class="contenu">
+					<label> Contenu<br/>
+					<textarea name="content" cols="80" rows="200" class="wymeditor"> {CONTENT}</textarea>
+					</label>
+			</fieldset>
+				
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

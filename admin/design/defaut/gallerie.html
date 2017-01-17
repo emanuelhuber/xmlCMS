@@ -1,0 +1,36 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h1>{TITRE}</h1>
+	<p>{CHAPEAU}</p>
+	
+
+	<div class="fleche_galerie">
+		<a href="{PHOTO_PRECEDANTE}" title="Photo précédante!" class="precedant_{CLASSE_PHOTO_PRECEDANTE}">
+			<!-- <img class="padding_nul" alt="suivant" src="design/defaut/images/fleche_bleu_gauche.png"/> -->&nbsp;
+		</a>
+		<a href="{PHOTO_SUIVANTE}" title="Photo précédante!" class="suivant_{CLASSE_PHOTO_SUIVANTE}">
+			<!-- <img class="padding_nul" alt="suivant" src="design/defaut/images/fleche_bleu_droite.png"/> -->&nbsp;
+		</a>
+	
+	
+		
+		<div class="bande_miniatures">
+			<!-- BEGIN miniature -->
+				<a href="{miniature.LIEN}" title="{miniature.TITRE}"><img alt="{miniature.TITRE}" class="miniature_{miniature.CLASSE}" src="{miniature.MINIATURE_LIEN}"/></a>
+			<!-- END miniature -->
+		</div>
+		
+	</div>
+	<hr/>
+	<div class="photo_active">
+		<img alt="{PHOTO_TITRE}" class="photo_active" src="{PHOTO_LIEN}"/>
+	</div>
+	<div class="commentaire_galerie">
+		{PHOTO_TITRE}
+	</div>
+
+	
+</div><!-- #principal --> 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <langue id="fr" nom="français">
+    <chapter id="fr,chapter,association" nom="Association" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,association" nom="Ichthus" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,association-programme" nom="Programme" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,article,evenement" nom="Evénements" module="article" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,gallerie,photos-du-camp" nom="Photos des camps" module="gallerie" soeur="" menu="1" publication="1" droits="-1"/>
+      <rubrique id="fr,rubrique,progression" nom="Progression" module="rubrique" soeur="" menu="1" publication="1" droits="-1"/>
+    </chapter>
+    <chapter id="fr,chapter,louvetaux" nom="Louvetaux" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,louvetaux" nom="Louvetaux" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,louveteaux-loi" nom="La Loi" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,louveteaux-promesse" nom="La Promesse" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,louveteaux-tenue" nom="La Tenue Lx" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <rubrique id="fr,rubrique,progression-louvetaux" nom="progression-louvetaux" module="rubrique" soeur="" menu="1" publication="1" droits="-1"/>
+    </chapter>
+    <chapter id="fr,chapter,aventurier" nom="Aventurier" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,aventuriers" nom="Les aventuriers" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,aventuriers-la-tenue" nom="La Tenue" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,aventuriers-loi" nom="La Loi" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,aventuriers-promesse" nom="La Promesse" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,ressources-couteau-suisse" nom="Couteau Suisse" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+    </chapter>
+    <chapter id="fr,chapter,eclaireur" nom="Eclaireur" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,eclaireurs" nom="Eclaireurs" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,eclaireurs-loi" nom="La Loi" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,eclaireur-promesse" nom="La Promesse" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,eclaireurs-tenue" nom="La Tenue" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,eclaireurs-brevets" nom="Les Brevets" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,eclaireurs-maitrise" nom="La Maîtrise" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+    </chapter>
+    <chapter id="fr,chapter,ressources" nom="Ressources" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,morse" nom="Morse" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,cordes-et-noeuds" nom="Cordes et noeuds" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,page,noeuds-pour-foulard" nom="Noeuds pour foulard" module="page" soeur="" menu="0" publication="1" droits="-1"/>
+      <page id="fr,page,bague-de-foulard" nom="Bague de foulard" module="page" soeur="" menu="0" publication="1" droits="-1"/>
+    </chapter>
+    <chapter id="fr,chapter,responsable" nom="Equipe pédago" module="chapter" soeur="" menu="1" publication="1" droits="-1">
+      <page id="fr,page,responsables" nom="Equipe pédago" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,gallerie,photos-responsables" nom="Photos Responsables" module="gallerie" soeur="" menu="1" publication="1" droits="-1"/>
+    </chapter>
+    <page id="fr,erreur" module="erreur" nom="Fehler" soeur="" menu="0" publication="1" droits="-1"/>
+    <page id="fr,page,une-petite-page-de-type-page" nom="une petite page de type page" module="page" soeur="" menu="1" publication="0" droits="-1"/>
+  </langue>
+</menu>

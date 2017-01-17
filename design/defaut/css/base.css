@@ -1,0 +1,706 @@
+
+/*
+VERT FONCE: #009605;
+VERT CLAIR: #00B506;
+
+*/
+
+img, table {border:none; padding:0; margin:0;}
+ul, ol, li, a {padding: 0px ; margin: 0px}
+ul { list-style: none; }
+
+img { 
+  vertical-align:middle; 
+} 
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+	/* padding: 0px 1px;
+	margin:4px; */
+	margin:0;
+	padding:0;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	background-image:url("../images/fond.jpgc");
+	font-size: 0.9em;
+	
+}
+#global {
+	padding: 0px 1px;
+	margin:6px 0 0 0;
+	/* width: 93%; */
+	max-width: 1024px;
+	min-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* En-tête */
+#entete {
+	height:215px;
+	overflow : hidden;
+	margin: 0px 0 -190px 170px ;
+	padding: 5px 20px 15px 10px;
+	z-index:100;
+	background: url("../images/titre_white.pngc") no-repeat left  center ; 
+}
+
+#menu-horizontal{
+	position:relative; 
+	z-index:0;
+	height:86px;
+	border: 0px solid #ffffff;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:1px;	
+	width:100%;
+	/* background-color:black; */
+}
+
+#entete h1{
+  color:white;
+}
+
+div#login{
+	position:relative;
+	width:146px;
+	background:RGB(200,200,200);
+	padding:4px 10px;
+	border:1px white solid;
+	margin:5px 6px 10px 8px;
+}
+#login p {
+	padding:0;
+	margin:0;
+}
+div#map {		/* Pour google map !! */
+	width:100%;
+	height:540px;
+	text-align:center;
+	margin:20px 0 30px 0;
+}
+/*====================================================================*/
+/* début - Articles-secondaire */
+
+div.titreCategorie{
+	text-align:center;
+	padding:3px;
+	font-size:1.5em;
+	color:RGB(100,109,100);
+	font-weight:bold;
+}
+ul.titresArticles li {
+    list-style-image: url("../images/article.jpgc");
+	padding-top:2px;
+}
+
+/* fin - Articles-secondaire */
+p.alert{
+	margin:4px; /* 4px 4px 250px; */
+	border:2px red solid;
+	/* width:550px; */
+	padding:50px 5px 5px 5px;
+	font-size: 0.9em; /* -> 4 */
+	font-weight: bold;
+	background:RGB(10,120,100) url("../images/attention.pngc") no-repeat center top;
+}
+.slideshow { float:right; margin:10px 0px 10px 0; z-index:150;/* height: 232px; width: 532px; */ }
+.slideshow img { padding: 5px; border: 1px solid #ccc; background-color: #eee; }
+
+#menu-horizontal ul{
+	margin:0px 10px 0 10px;
+	padding:0px 0 0 0;
+	overflow:hidden;
+}
+
+#menu-horizontal li {
+	display:table;
+	float:left;
+ 	/* height:350px; */
+	width:166px;
+	/* width:8.5em; */
+	margin:205px 0 0px 0;
+	padding:77px 0 0 0;
+	background-image: url("../images/scoutisme-sprites2.pngc");
+	background-repeat:no-repeat;
+	font-size: 18px;
+	/* font-size: 1.2em; */
+	font-weight: bold;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow:  clip;
+	/* padding:0 10px 0 10px; */
+}
+#menu-horizontal a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	padding:4px 0px 3px 0px;
+	width:100%;
+	border-top:1px #CECECE solid;
+	border-right:1px #CECECE solid;
+	border-left:1px #CECECE solid;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow:  clip;
+	
+}
+#menu-horizontal a:hover, a:active,a:focus{
+	color:#CECECE;
+}
+
+
+/* NB 1*/
+#menu-horizontal .nb1 {
+	background-position:0px 0px;  
+	padding:295px 0 0 0;
+	margin:-15px 0 0 0;
+}
+#menu-horizontal .nb1:hover,#menu-horizontal .nb1:active,#menu-horizontal .nb1:focus{ 
+  background-position:-160px 0px; 
+}
+/* NB 2*/
+#menu-horizontal .nb2 {
+	background-position:-320px 0;
+}
+#menu-horizontal .nb2:hover,#menu-horizontal .nb2:active,#menu-horizontal .nb2:focus{ 
+  background-position:-320px -100px; 
+}
+/* NB 3*/
+#menu-horizontal .nb3{
+	background-position:-480px -0px;
+}
+#menu-horizontal .nb3:hover,#menu-horizontal .nb3:active,#menu-horizontal .nb3:focus{ 
+  background-position:-480px -100px;
+}
+/* NB 4*/
+#menu-horizontal .nb4 {
+	 background-position:-640px -0px;
+}
+#menu-horizontal .nb4:hover,#menu-horizontal .nb4:active,#menu-horizontal .nb4:focus{ 
+  background-position:-640px -100px; 
+}
+/* NB 5*/
+#menu-horizontal .nb5{
+	 background-position:-800px -0px;
+}
+#menu-horizontal .nb5:hover,#menu-horizontal .nb5:active,#menu-horizontal .nb5:focus{ 
+  background-position:-800px -100px;
+}
+/* NB 6*/
+#menu-horizontal .nb6 {
+	 background-position:-960px 2px;
+	 width:168px;
+}
+#menu-horizontal .nb6:hover,#menu-horizontal .nb6:active,#menu-horizontal .nb6:focus{ 
+  background-position:-960px -98px; 
+}
+
+/* Conteneur central */
+#centre {
+	background: url("../images/fond-colgauche.pngc") repeat-y left top;
+	padding:10px 0 0 0;
+	min-height:570px;
+	
+}
+#centre-bis {
+	width:100%;
+	margin:-11px 0 0 0;
+	overflow: hidden;
+	min-height:600px;
+	background: url("../images/fond-coldroite.pngc") repeat-y right top;
+}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+
+
+/* Bloc central */
+#container_menu{
+	padding: 0;
+	position:relative;
+	margin:5px 0 0 0;
+}
+/* menu */
+#menu {
+	float: left;
+	width: 176px;
+}
+#menu a {
+	width:150px;
+}
+#menu a.actif {
+	text-align:right;
+}
+#menu  img{
+	margin:5px 0 0px 0;
+	padding:1px 8px 1px 8px;
+}
+#menu ul {
+	margin: 0;
+	padding: 0px 10px 0px 10px;
+	list-style: none;
+	z-index: 10;
+}
+#menu li {
+	margin: 5px 0 10px 0;
+	overflow:visible;
+}
+#menu ul a {
+	color: #FFFFFF;
+	display: block;
+	height:auto;
+	font-weight:bold;
+	line-height: 1.5;
+	font-size: 0.9em;
+	text-decoration: none;
+	margin:5px 0 0px 0;
+	padding:1px 8px 1px 8px;
+}
+#menu ul a.actif, #menu ul a.actifnochild {
+	text-align:right;
+}
+#menu ul a.actif:hover, , #menu ul a.actifnochild:hover,  #menu ul a.actif:active , #menu ul a.actifnochild:active, #menu ul a.actif:focus , #menu ul a.actifnochild:focus{
+	color:red;
+}
+#menu ul a:hover, #menu ul a:active, #menu ul a:focus {
+	text-indent:2px;
+}
+#menu ul ul li {
+	display: block;
+	padding:0;
+}
+#menu ul ul a {
+	background-color:transparent;
+	background-image:url("../images/line-transparent.pngc");
+	font-size:10px;
+	display:block; 
+	height:20px;
+	border-bottom:none;
+	margin:0px 0px 0px 0px;
+	padding:1px 8px 4px 13px;
+	text-decoration:none;
+	text-align:left;
+	width:124px;
+	font-weight: normal;
+	color:black;
+	font-size: 0.9em;
+}
+#menu ul ul a:hover {
+	color:red;
+}
+#menu ul ul.actif {
+	position:relative;
+	left:0px;
+	z-index:0;
+	margin:0px 0 2px 0;
+}
+#menu ul ul.actif a:hover{
+	color:#f2462e;
+	margin:0;
+	padding:1px 0px 1px 13px;
+}
+#menu ul ul.actif a {
+	background-image:none;
+	background-color:transparent;
+	background-color: white;
+	color:black;
+	margin:0;
+	padding:1px 8px 1px 8px;
+}
+#menu ul ul.actif a.sactif {
+	color:blue;
+	text-align:right;
+	margin:0;
+	padding:1px 8px 1px 8px;
+}
+#menu ul ul.actif a.sactif:hover {
+	color:gray;
+	margin:0;
+	padding:1px 8px 1px 0px;
+}
+#menu ul ul {
+	position:absolute;
+	left:-9999px;
+	z-index:10;
+}
+#menu ul ul li{
+	margin:0;
+	padding:12px 8px 8px px;
+}
+#menu ul li:hover > ul {
+	left:100%;
+	margin:-24px 0px -100px -10px;
+}
+#menu ul li:hover > ul.actif {
+	position:relative;
+	left:0px;
+	z-index:0;
+	margin:0px 0 0px 0;
+	background-color:transparent;
+}
+
+div#fleche_haut{	
+    bottom: 4px;
+    position: fixed;
+    padding-bottom: 10px;
+    margin-left: 162px;
+    z-index: 0;
+}
+/* Contenu principal */
+#principal {
+	margin-left: 190px;
+	margin-right: 210px;
+	padding: 20px 10px 10px 10px;
+	/* clear:both; */
+	/* min-height:500px; */
+	/* vertical-align:middle; */
+	/* display: table;  */
+	width:55%;
+}
+#principal img{
+	padding:5px;
+	margin:5px 10px;
+	background-color:white;
+	border:1px solid grey;
+}
+
+#principal h1:first-of-type {
+	margin: 0px;
+}
+
+#principal p{
+	line-height: 1.4;
+	/* font-size: 0.9em; */
+} 
+
+#principal li {
+	line-height: 1.4;
+	font-size: 0.9em;
+	list-style-type:disc;
+}
+#principal ul {
+	margin-left:20px;
+	padding-left:10px;
+}
+#principal .tableau_relief {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#principal .tableau_relief td {
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 0.3em;
+    vertical-align: middle;
+}
+
+#principal div#navigation {
+    padding: 0.3em;
+	/* height:1.5em; */
+   /*  vertical-align: middle; */
+	font-size: 0.8em;
+	/* border:1px black solid; */
+	text-align: center;
+	overflow:hidden;
+	background:url("../images/fond-article.pngc");
+}
+
+#principal div#navigation a.previous{
+    background: url("../images/fleche_gauche1.pngc") no-repeat scroll left center transparent;
+    text-align: left;
+	vertical-align:middle;
+	 float:left;
+	/* display: inline-block; */
+    padding: 10px 10px 10px 44px;
+	width:38%;
+	outline: medium none;
+}
+
+#principal div#navigation a.next  {
+    background: url("../images/fleche_droite1.pngc") no-repeat scroll right center transparent;
+    padding: 10px 44px 10px 10px;
+    text-align: right;
+	 float:right; 
+	width:38%;
+	/* display: inline-block; */
+	/* max-width:200px; */
+	vertical-align:middle;
+	outline: medium none;
+}
+
+
+#principal a.article{
+	display:block;
+	background:url("../images/fond-article.pngc");
+	border:1px grey solid;
+	margin:0 0 1em 0;
+	padding:0.5em 1em;
+	color:#5E79B5;
+}
+#principal a.article:hover{
+	border:1px white solid;
+	background:url("../images/fond-article-hover.pngc");
+	color:white;
+}
+#principal a.article:visited{
+	color:#5E79B5;
+}
+
+#principal  span.article_titre{
+	display:inline-block;
+	font-size: 1.2em;
+	font-weight:bold;
+	padding:0.5em 0;
+}
+#principal span.article_desc{
+	display:inline-block;
+	padding:0 0 0.5em 0;
+	color:black;
+}
+/*
+#principal .gallerie{
+	display:inline-block;
+	text-align:center;
+	float:left;
+}
+
+#principal .gallerieDesc {
+	float:left;
+	display:block;
+}
+#principal h3.gallerie, p.gallerie p{
+	width:275px;
+	text-align:left;
+}
+*/
+#principal h3.gallerie{
+	text-align:left;vertical-align:middle;
+}
+#principal div.bloc{
+	border:2px solid black;
+	float: left;
+    margin: 5px;
+    width: 47%;
+	display:inline-block;
+	/* vertical-align:bottom; */
+	background:url("../images/fond-article.pngc");
+}
+#principal div.bloc h1{
+	/* width:100%; */
+	background-color:#a95c29;
+	color:white;
+	margin:0 0 0.5em 0;
+	padding:0.4em;
+	font-size: 1.1em;
+	text-align:center;
+}
+#principal div.bloc p{
+	margin:0.3em;
+}
+#principal div#bloc_2  {
+	border:none;
+	padding:0.6em;
+	display:table-cell;
+	background-image:url("../images/guillemetouvrantbp.png"), url("../images/guillemetfermant.png"); 
+	background-position:  top left,  bottom right;
+	background-repeat: no-repeat;
+	margin:20px 0px 0 0px;
+	min-height:190px;
+	/* vertical-align:middle; */
+	/* overflow:hidden; */
+	/* padding:0 0 0 0; */
+}
+#principal div#bloc_2  h1 {
+	display:none;
+}
+#principal div#bloc_2 p {
+	vertical-align:middle;
+	 /* display: table-cell; */
+	/* min-height:100px; */
+	/* line-height: 190px; */
+}
+
+#chemin2fer{
+	color:#5E79B5;
+	font-size: 0.8em;
+}
+#chemin2fer img{
+	padding:0;
+	margin:0;
+	border:none;
+	background-color:transparent;
+}
+/* Contenu secondaire */
+#secondaire {
+	float: right;
+	width: 200px;
+	padding: 12px 30px;
+	margin-top:5px;
+	/* clear:both; */
+}
+
+#secondaire img{
+	padding:5px;
+	margin:5px 5px;
+	background-color:white;
+	border:1px solid grey;
+}
+#secondaire h1{
+    font-size: 1.1em;
+	color:#5E79B5;
+}
+#secondaire h2{
+    font-size: 1em;
+}
+#secondaire h3{
+    font-size: 0.9em;
+}
+#secondaire p{
+    font-size: 0.7em;
+}
+#secondaire ul {
+	list-style-type: circle;
+	margin:0 0 0 1em;
+}
+#secondaire li {
+	margin:0.5em 0 0 0;
+}
+
+#secondaire div.box{
+
+	margin-bottom:5px;
+}
+/* Pied de page */
+#pied {
+	margin: 0;
+	padding: 15px 260px 10px 200px;
+	font-size: .9em;
+	text-align:center;
+	color:white;		/*RGB(125,125,125);*/
+	background-image:url("../images/fond-pied.pngc");
+	clear:both;
+}
+#pied #infos_techniques{
+	display:none;
+}
+.infostechniques{
+
+	text-align:left;
+	width:600px;
+	padding:10px;
+	background-color:white;
+}
+/* Mention de copyright */
+#copyright {
+	margin: 8px 0 0 0;
+	font-size: 1em;
+	font-weight:bold;
+	/* color: #848F63; */
+	/* text-align: left; */
+}
+
+ .float_left{
+    float: left;
+ }
+ .float_right{
+    float: right;
+ }
+
+/* EDITOR RELATED STYLES - CUSTOMIZE FOR YOUR NEEDS */
+/*
+    The classes panel, the visual feedback and the preview
+    will be affected by these values.
+    
+    - Commented styles inside style definitions are used for visual 
+      feedback when using the editor.
+    - Comments before opening the style are used as caption.
+    - Comments after the class name and before the style declaration ({)
+      define the jQuery expression that decides whether this 
+      style should be applied or not.
+      
+    Note: the WYMeditor and /WYMeditor comments below are required
+    for the CSS parser to work properly.
+*/
+
+/* WYMeditor */
+
+/* PARAgraphe: Date */
+p.date {
+  color: #ccf;
+  /* background-color: #ff9; border: 2px solid #ee9; */
+}
+
+/* PARA: Hidden note */
+p.hidden-note /* p[@class!="important"] */ {
+     display: none;
+    /* color: #999; border: 2px solid #ccc; */
+}
+
+/* PARA: Important */
+p.important /* p[@class!="hidden-note"] */ {
+    color: red; font-weight: bold;
+    /* color: red; font-weight: bold; border: 2px solid red; */
+}
+
+/* PARA: Droite */
+p.droite {
+    text-align: right;
+    /* text-align: right; */
+}
+/* PARA: Gauche */
+p.gauche {
+    text-align: left;
+    /* text-align: left; */
+}
+/* PARA: Centre */
+p.centre {
+    text-align: center;
+    /*text-align: center; */
+}
+/* PARA: Justifier */
+p.justifie {
+    text-align: justify;
+    /* text-align: justify; */
+}
+/* PARA: Vertical centré */
+p.valignmiddle {
+	vertical-align:middle; 
+	 display: table;
+    /* vertical-align:middle; display:table; background-color:rgb(230,230,122); padding: 8px 5px 5px; margin: 10px; */
+}
+/* PARA: Grand 1.5 */
+p.grand {
+   font-size:1.5em;
+    /* font-size:1.5em; */
+}
+/* LIST: Special */
+ul.special,
+ol.special {
+    color: green;
+    /** / background-color: #fc9; border: 2px solid red; /**/
+}
+/* /WYMeditor */
+/* END EDITOR RELATED STYLES */
+
+/* IMG: aligner à droite */
+img.droite{
+	float:right; 	
+	 /* float:right; */
+}
+/* IMG: aligner à droite */
+img.gauche{
+	float:left; 
+	 /* float:left; */
+}
+
+p.valignmiddle span {
+	display: table-cell; 
+	vertical-align:middle; 
+}
+

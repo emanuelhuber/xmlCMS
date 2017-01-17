@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Système de template</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Le système de template : Introduction</h1>
+
+	<h2>Mélange de code <code>PHP</code> et de <code>HTML</code></h2>
+	<p>Le bout de code ci-dessous correspond à l'entête d'un fichier <code>.html</code>. Du code <code>PHP</code> a été mélangé au code <code>HTML</code>. On reconnaît le code <code>PHP</code> car il est encadré par "<code style="color:red;">&lt;?php</code>" et "<code style="color:red;">?&gt;</code>" :</p>
+<pre class="brush: xml">
+	
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+&lt;!-- META-DONNEES  --&gt;
+&lt;title&gt;&lt;?php echo utf8_decode($domPageInfo-&gt;getAttribute('title'));  ?&gt;&lt;/title&gt;
+&lt;meta name=&quot;Author&quot; lang=&quot;fr&quot; content=&quot;&lt;?php echo utf8_decode($domPageInfo-&gt;getAttribute('auteur')); ?&gt;&quot;/&gt;
+&lt;meta name=&quot;Description&quot; content=&quot;&lt;?php echo utf8_decode($domPageInfo-&gt;getAttribute('description')); ?&gt;&quot;/&gt;
+&lt;meta name=&quot;Keywords&quot; content=&quot;&lt;?php echo utf8_decode($domPageInfo-&gt;getAttribute('motsclefs'));  ?&gt;&quot;/&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=ISO-8859-1&quot; /&gt;
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;hlTcDZ_jeAX3P2jrurWiFljMitDPFq2uWCdB2mHtGuY&quot; /&gt;
+</pre>
+	
+	<p>Bref, ça peut vite devenir le bazar, surtout si le code <code>PHP</code> doit afficher du code <code>HTML</code>.
+	Une alternative à ce genre de pratique est l'utilisation d'un système de template.</p>
+	
+	<p>
+	Qu'est ce qu'un système de template en PHP ? Il s'agit d'un moyen permettant à un programmeur PHP de 
+	travailler de son côté, tout en permettant à un graphiste <code>HTML</code> par exemple de travailler du sien. 
+	Le programmeur <code>PHP</code> aura un fichier <code>.php</code>, le graphiste un fichier <code>.html</code> (template). 
+	Le système de template mettra en relation ces deux fichiers afin de n'en former plus qu'un seul à la fin.
+	L'intéret d'un tel système est justement de ne pas mélanger <code>PHP</code> et <code>HTML</code>, pour faciliter la vie des 
+	graphistes en général. Le système de template qui permet de gérer les thèmes 
+	sans jamais aller modifier les fichiers <code>PHP</code> (Source: www.developpez.com).
+	</p>
+	<p>Pour changer de thème il suffit simplement de changer de template.</p>
+
+	<h2>Les balises ("tags")</h2>
+	<p>Le code ci-dessous correspond au code d'au-dessus, mis à part que le code <code>PHP</code> a été élégamment remplacé
+	par des balises (tags) du type : "<code>{NOM_DE_LA_BALISE}</code>" :</p>
+<pre class="brush: xml">
+	
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+&lt;!-- META-DONNEES  --&gt;
+&lt;title&gt;{TITRE}&lt;/title&gt;
+&lt;meta name=&quot;Author&quot; lang=&quot;fr&quot; content=&quot;{AUTEUR}&quot;/&gt;
+&lt;meta name=&quot;Description&quot; content=&quot;{DESCRIPTION}&quot;/&gt;
+&lt;meta name=&quot;Keywords&quot; content=&quot;{MOTS_CLEFS}&quot;/&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=ISO-8859-1&quot; /&gt;
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;hlTcDZ_jeAX3P2jrurWiFljMitDPFq2uWCdB2mHtGuY&quot; /&gt;
+</pre>	
+	
+	<p>Le serveur va lire le fichier <code>.html</code>, chercher si il y a des balises "{}" et remplacer leur contenu
+	par les données correspondante. Par example, la balise <code>{AUTEUR}</code> sera remplacée par <code>Jacques Chirac</code>.</p>
+	
+	<p>Cela veut dire que c'est le graphiste qui contrôle l'information en ajoutant ou supprimant judicieusement les balises "{}". 
+	Si dans le fichier <code>.html</code> vous ne voulez pas afficher le titre, il suffit simplement de supprimer la balise 
+	<code>{TITRE}</code>. Une liste de toutes les balises existantes pour le gabarit squelette peut être trouvée 
+	<a href="balise_squelette.html" title="Liste des balises des gabarits du template">ici</a>.</p>
+	
+	<p></p>
+	
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

@@ -1,0 +1,250 @@
+
+/*
+VERT FONCE: #7CBAEA;
+VERT CLAIR: #00B506;
+
+*/
+
+img, table {border:none; padding:0; margin:0;}
+ul, ol, li, a {padding: 0px ; margin: 0px}
+ul { list-style: none; }
+
+img { 
+  vertical-align:middle; 
+} 
+
+
+body {
+	padding: 0px 5px;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	background-image:url("../images/fond.jpg");
+	
+}
+#global {
+	/* width: 93%; */
+	max-width: 1024px;
+	min-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* En-tête */
+#entete {
+	padding: 0px 10px;
+	height:215px;
+	overflow : hidden;
+	margin-bottom:-245px;
+	margin-left:170px;
+	margin-top:10px;
+	position:relative; 
+	z-index:100;
+	padding-top:5px;
+	background: url("../images/titre_white.png") no-repeat left  center ; 
+}
+
+#menu-horizontal{
+	position:relative; 
+	z-index:0;
+	height:340px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:1px;
+	width:100%;
+	/* background-color:#7CBAEA; */
+	background-color:black;
+}
+
+#entete h1{
+	display:none;
+}
+
+.slideshow { float:right;/* height: 232px; width: 532px; */ margin: auto;}
+.slideshow img { padding: 5px; border: 1px solid #ccc; background-color: #eee; }
+
+#menu-horizontal ul{
+	margin:20px 10px 0 10px;
+	padding:20px 0 0 0;
+}
+
+#menu-horizontal li {
+	display:block;
+	float:left;
+ 	/* height:350px; */
+	width:160px;
+	margin:210px 0 0px 0;
+	padding:80px 0 0 0;
+	background-image: url("../images/scoutisme-sprites2.png");
+	background-repeat:no-repeat;
+	font-size: 1.2em;
+	font-weight: bold;
+	/* padding:0 10px 0 10px; */
+}
+#menu-horizontal a{
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	padding:4px 0px 3px 0px;
+	width:100%;
+	border-top:1px #CECECE solid;
+	border-right:1px #CECECE solid;
+	border-left:1px #CECECE solid;
+	
+}
+#menu-horizontal a:hover, a:active,a:focus{
+	color:#CECECE;
+}
+#menu-horizontal a.activated {
+	color:#7CBAEA;
+	background-color:#FFFFFF;
+	
+}
+
+
+/* NB 1*/
+#menu-horizontal .nb1 {
+	background-position:0px 0px;  
+	padding:290px 0 0 0;
+	margin:0;
+}
+#menu-horizontal .nb1:hover,#menu-horizontal .nb1:active,#menu-horizontal .nb1:focus{ 
+  background-position:-160px 0px; 
+}
+/* NB 2*/
+#menu-horizontal .nb2 {
+	background-position:-320px 0;
+}
+#menu-horizontal .nb2:hover,#menu-horizontal .nb2:active,#menu-horizontal .nb2:focus{ 
+  background-position:-320px -100px; 
+}
+/* NB 3*/
+#menu-horizontal .nb3{
+	background-position:-480px -0px;
+}
+#menu-horizontal .nb3:hover,#menu-horizontal .nb3:active,#menu-horizontal .nb3:focus{ 
+  background-position:-480px -100px;
+}
+/* NB 4*/
+#menu-horizontal .nb4 {
+	 background-position:-640px -0px;
+}
+#menu-horizontal .nb4:hover,#menu-horizontal .nb4:active,#menu-horizontal .nb4:focus{ 
+  background-position:-640px -100px; 
+}
+/* NB 5*/
+#menu-horizontal .nb5{
+	 background-position:-800px -0px;
+}
+#menu-horizontal .nb5:hover,#menu-horizontal .nb5:active,#menu-horizontal .nb5:focus{ 
+  background-position:-800px -100px;
+}
+/* NB 6*/
+#menu-horizontal .nb6 {
+	 background-position:-960px -0px;
+}
+#menu-horizontal .nb6:hover,#menu-horizontal .nb6:active,#menu-horizontal .nb6:focus{ 
+  background-position:-960px -100px; 
+}
+
+/* Conteneur central */
+#centre {
+	background: url("../images/fond-colgauche2.png") repeat-y left top;
+}
+#centre-bis {
+	width:100%;
+	background: url("../images/fond-coldroite.png") repeat-y right top;
+}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+
+
+/* Bloc central */
+#centre-bis {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* menu */
+#menu {
+	float: left;
+	width: 180px;
+}
+#menu  img{
+	margin:5px 0 0px 0;
+	padding:1px 8px 1px 8px;
+}
+#menu ul {
+	margin: 0;
+	padding: 20px 10px 20px 10px;
+	list-style: none;
+}
+#menu li {
+	margin: 5px 0 10px 0;
+}
+#menu ul a {
+	color: #FFFFFF;
+	display: block;
+	height:auto;
+	font-weight:bold;
+	line-height: 1.5;
+	font-size: 0.9em;
+	text-decoration: none;
+	margin:5px 0 0px 0;
+	padding:1px 8px 1px 8px;
+	background-image:url("../images/menu_col1_louv.png");
+}
+#menu ul a.actifnochild {
+	background-image:url("../images/menu_col2_louv.png");
+	text-align:right;
+}
+#menu ul a.actifnochild:hover, #menu ul a.actifnochild:active, #menu ul a.actifnochild:focus {
+	color:red;
+}
+#menu ul a:hover, #menu ul a:active, #menu ul a:focus {
+	background-image:url("../images/menu_col2_louv.png");
+	text-indent:2px;
+}
+/* Contenu principal */
+#principal {
+	margin-left: 180px;
+	margin-right: 260px;
+	padding: 10px 10px;
+	background:url("../images/fond_louvetaux.png") no-repeat left top;
+	min-height:300px;
+}
+/* #principal > :first-child {
+	margin-top: 10px;
+} */
+#principal p, #principal li {
+	line-height: 1.4;
+	font-size: 0.9em;
+}
+#chemin2fer{
+	color:#5E79B5;
+	font-size: 0.8em;
+}
+/* Contenu secondaire */
+#secondaire {
+	float: right;
+	width: 200px;
+	padding: 12px 20px;
+}
+
+/* Pied de page */
+#pied {
+	margin: 0;
+	padding: 15px 260px 10px 200px;
+	font-size: .75em;
+	text-align:center;
+	color:RGB(125,125,125);
+}
+
+/* Mention de copyright */
+#copyright {
+	margin: 8px 0 0 0;
+	font-size: 1em;
+	/* text-align: ce; */
+}

@@ -1,0 +1,54 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+	<!-- END info -->
+	
+<h1>Ajouter un utilisateur</h1>
+	<div id="wrapper">
+	   <ul class="tabs">
+			<li><a href="{LINK_USER}">Utilisateurs</a></li>
+			<li class="selected"><a href="{LINK_ADD_USER}" title="Ajouter un utilisateur">Ajouter un utilisateur</a></li>
+		</ul>
+		
+	<!-- Editer les infos -->
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Ajouter un utilisateur</legend>
+				<p>	<label>Nom d'utilisateur <input type="text" name="user[username]" value="" size="50" maxlength="150"/></label></p>
+				<!-- <p>	<label>Group <input type="text" name="user[type]" value="{GROUP}" size="50" maxlength="50"/></label></p> -->
+				<p>	<label>Email <input type="text" name="user[email]" value="" size="50" maxlength="50" id="datepicker"/></label></p>
+				<p>	<label>Mot de passe <input type="text" name="user[password]" value="" size="50" /></label></p>
+				<p> <label>Groupe de l'utilisateur
+						<select name="user[group]" size="1">
+							<!-- BEGIN groups -->
+							<option value="{groups.ID}"  
+								<!-- IF groups.SELECTED -->
+									selected="selected"
+								<!-- ENDIF -->
+							>{groups.GRP_NAME}</option>
+							<!-- END groups -->	
+						</select>
+					</label>
+				</p>
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div><!-- #wrapper -->
+		
+	
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

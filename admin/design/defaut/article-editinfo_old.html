@@ -1,0 +1,158 @@
+<script type="text/javascript">
+<!--
+
+$(function() {
+	$('#datepicker').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat: 'dd.mm.yy'
+	});
+});
+-->
+
+</script>
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+<div id="principal">	
+	
+	<div id="wrapper">
+		<h1>
+		<!-- IF HAS_RIGHT -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> 
+		Edition de l'articles «&nbsp;{FORM_TITRE}&nbsp;»
+		<!-- IF IS_ONLINE -->
+			<sup><code>EN LIGNE</code></sup>
+			<!-- <img src="design/defaut/images/published-small.png" alt="La page est publiée (online)" title="La page est publiée (online)"/> -->
+		<!-- ELSE -->
+			<sup><code class="attention">HORS LIGNE</code></sup>
+		 <!-- <img src="design/defaut/images/unpublished-small.png" alt="La page n'est pas publiée (offline)" title="La page n'est pas publiée (offline)"/> -->
+		<!-- ENDIF --> </h1>
+		<p class="attention">
+		<!-- ID=<code>[{FORM_ID}] -- </code> 
+		Description : «&nbsp;<em>{FORM_DESCRIPTION}</em>&nbsp;»
+		<br/> -->
+		<!-- IF IS_ONLINE -->
+			 Retirer la page &nbsp;<span><a href="{LINK_PUBLISH}" title="Retirer l'article"><img src="design/defaut/images/offline.png" alt="Retirer l'article"/></a></span>
+		<!-- ELSE -->
+		 Mettre la page en ligne &nbsp;<span><a href="{LINK_PUBLISH}" title="Publier l'article"><img src="design/defaut/images/online.png" alt="Publier l'article"/></a></span>
+		<!-- ENDIF -->
+		</p>
+		
+		<!-- IF IS_ONLINE -->
+			<code>EN LIGNE</code>
+			<!-- <img src="design/defaut/images/published-small.png" alt="La page est publiée (online)" title="La page est publiée (online)"/> -->
+		<!-- ELSE -->
+			<code>HORS LIGNE</code>
+		 <!-- <img src="design/defaut/images/unpublished-small.png" alt="La page n'est pas publiée (offline)" title="La page n'est pas publiée (offline)"/> -->
+		<!-- ENDIF --> 
+		
+		<h1>
+		<!-- IF HAS_RIGHT -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> 
+		Edition de l'article «&nbsp;{FORM_TITRE}&nbsp;»</h1>
+		<code>{FORM_ID}</code></p>
+		<!-- <p><strong>...dans la collection d'articles : "<a href="{LINK_INDEX}">{TITRE_COLLECTION}</a>"</strong>&nbsp;:<br/>
+		-->
+		<p><em>{FORM_DESCRIPTION}</em></p>
+		<p>
+			<!-- IF IS_ONLINE -->
+			 Retirer l'article &nbsp;<span><a href="{LINK_PUBLISH}" title="Retirer l'article"><img src="design/defaut/images/offline.png" alt="Retirer l'article"/></a></span>
+			<!-- ELSE -->
+			 Mettre l'article en ligne &nbsp;<span><a href="{LINK_PUBLISH}" title="Publier l'article"><img src="design/defaut/images/online.png" alt="Publier l'article"/></a></span>
+			<!-- ENDIF -->
+		</p>
+		
+	   <ul class="tabs">
+			<li><a href="{LINK_EDITCONTENT_ARTICLE}">Editer article</a></li>
+			<li class="selected"><a href="{LINK_EDITINFO_ARTICLE}">Editer info article</a></li>
+		</ul>
+
+		<!-- Editer les infos -->
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}#tab1">
+			
+			<fieldset class="metadonnees">
+				<legend>Méta-données</legend>
+			
+			
+				<p>	<label>Titre <input type="text" name="info[titre]" value="{FORM_TITRE}" size="50" maxlength="150"/></label></p>
+				<p>	<label>Auteur <input type="text" name="info[auteur]" value="{FORM_AUTEUR}" size="50" maxlength="50"/></label></p>
+				<p>	<label>Date <input type="text" name="info[date]" value="{FORM_DATE}" size="50" maxlength="50" id="datepicker"/></label></p>
+				<p>	<label>Description <input type="text" name="info[description]" value="{FORM_DESCRIPTION}" size="50" /></label></p>
+				<p>	<label>Mots-clefs (séparé par une virgule) <input type="text" name="info[motsclefs]" value="{FORM_MOTSCLEFS}" size="50" /></label></p>
+				<p>Vos mots-clefs: 
+				<!-- BEGIN tags -->	
+					<a href="javascript:insert_tag('{tags.TAGNAME}')">{tags.TAGNAME}</a> 
+				<!-- END tags -->	
+				<!-- 
+				<a href="javascript:insert_tag('début')">début</a> <a href="javascript:insert_tag('bonjour')">bonjour</a> <a href="javascript:insert_tag('vie')">vie</a> <a href="javascript:insert_tag('société')">société</a> <a href="javascript:insert_tag('amour')">amour</a> <a href="javascript:insert_tag('love')">love</a> </p>
+				 -->
+				<p>	<label>Droits 	<select name="info[droit]" size="1">
+						<option value="-1"  
+						<!-- IF HAS_RIGHT -->
+						selected="selected"
+						<!-- ENDIF --> 
+						>Pas de droits</option>
+					<!-- BEGIN rights -->
+						<option value="{rights.VALUE}"  
+							<!-- IF rights.SELECTED -->
+								selected="selected"
+							<!-- ENDIF -->
+						>{rights.NAME}</option>
+					<!-- END rights -->
+					
+							</select>
+				</label>
+				</p>
+				<!-- <p>	<label>Publication 	<select name="info[publication]" size="1">
+						-- IF IS_PUBLICATED --
+							<option value="0">Brouillon</option>
+							<option value="1" selected="selected">Publié</option>
+						-- ELSE --
+							<option value="0" selected="selected">Brouillon</option>
+							<option value="1">Publié</option>
+						-- ENDIF --
+							</select>
+					</label>
+				</p> -->
+								<p>	<label>Commentaires 	<select name="info[commentaire]" size="1">
+						<!-- IF HAS_COMMENT -->
+							<option value="0">Interdit</option>
+							<option value="1" selected="selected">Autorisé</option>
+						<!-- ELSE -->
+							<option value="0" selected="selected">Interdit</option>
+							<option value="1">Autorisé</option>
+						<!-- ENDIF -->
+							</select>
+					</label>
+				</p>	
+				<p> <label> Image
+						<select name="info[image]" size="1">
+							<option value="#">#</option>
+						</select>
+					</label>
+				</p>
+				<p> <label> Miniature
+						<select name="info[miniature]" size="1">
+							<option value="#">#</option>	
+						</select>
+					</label>
+				</p>
+			</fieldset>
+				
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div><!-- #wrapper -->
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Bienvenue!! !]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[19.05.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[-1]]></droit>
+    <publication><![CDATA[1]]></publication>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+  </info>
+ <design theme="ichthus" style="association" squelette="squelette.html" page="erreur.html"/>
+	<contenu>
+		<principal>
+			<erreur400>
+				<![CDATA[La syntaxe de la requ&ecirc;te est mal formul&eacute;e ou est impossible &agrave; satisfaire.]]>
+			</erreur400>
+			<erreur401>
+				<![CDATA[Acc&egrave;s non autoris&eacute;. V&eacute;rifiez votre login et password.]]>
+			</erreur401>
+			<erreur403>
+				<![CDATA[L'acc&egrave;s à ce dossier ou fichier est interdit.]]>
+			</erreur403>
+			<erreur404>
+				<![CDATA[La page que vous demandez  n'existe pas.]]>
+			</erreur404>
+			<erreur405>
+				<![CDATA[M&eacute;thode non permise.]]>
+			</erreur405>
+			<erreur500>
+				<![CDATA[Le serveur &agrave; rencontr&eacute; un probl&egrave;me interne.]]>
+			</erreur500>
+			<erreur501>
+				<![CDATA[Mauvaise passerelle d\'acc&egrave;s.]]>
+			</erreur501>
+			<erreur502>
+				<![CDATA[Temps d'acc&egrave;s &agrave; la passerelle expir&eacute;.]]>
+			</erreur502>
+			<erreur503>
+				<![CDATA[Service non disponible.]]>
+			</erreur503>
+			<erreur504>
+				<![CDATA[Temps d'acc&egrave;s &agrave; la passerelle expir&eacute;.]]>
+			</erreur504>
+			<erreur>
+				<![CDATA[Une erreur est survenue. Veuillez nous en excuser. Merci.]]>
+			</erreur>
+		</principal>
+	</contenu>
+</page>

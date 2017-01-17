@@ -1,0 +1,32 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+	<h1>Utilisation</h1>
+	
+	<p><pre><code>%%% PLUGIN inclureEncart:actualites %%%</code></pre></p>
+</div><!-- #secondaire -->
+
+<div id="principal">
+	
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+		<fieldset class="rubrique">
+			<legend><img src="design/defaut/images/plugin-inclureEncartAjouter.png" alt="Créer un encart"/> Créer un encart</legend>
+			<p><label>Titre de l'encart <input type="text" name="title" value="" size="50" maxlength="150"/></label>
+			<input type="submit" name="nom" value="OK"/></p>
+		</fieldset>
+	</form>
+
+	<h1>Liste des encarts</h1>
+	<!-- BEGIN liste -->
+				<p><strong>{liste.ID}</strong><br/>
+				<a href="{liste.EDIT_LINK}"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+				<a href="{liste.DELETE_LINK}"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+				</p>
+	
+	<!-- END liste -->
+
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

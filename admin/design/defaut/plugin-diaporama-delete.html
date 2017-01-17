@@ -1,0 +1,38 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+<div id="principal">
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+		<!-- END info -->
+	<h1>Diaporama JavaScript</h1>
+	<div id="wrapper">
+	    <ul class="tabs">
+			<li><a href="{LINK_INDEX}">Diaporamas</a></li>
+			<li class="selected"><a href="{LINK_DELETE}">Diaporamas</a></li>
+		</ul>
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Supprimer ce dossier ?</legend>
+				<p> Voulez-vous vraiment supprimer ce dossier ?<br/>
+					<strong>ID</strong> : {ID} <br/>
+				</p>
+				<p><label><input type="radio" name="ok" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" checked="checked"/>Non</label><br/></p>
+				
+				<p>Attention, le dossier "<code>{ID}</code>" et tous ses fichiers seront irréversiblement supprimés.</p>
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div>
+	
+	{CONTENU}
+</div><!-- #principal --> 

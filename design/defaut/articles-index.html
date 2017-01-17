@@ -1,0 +1,48 @@
+
+<div id="secondaire">	
+		{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">	
+	<div id="chemin2fer">
+		<img src="design/ichthus/images/camp.png" alt="{L_VOUS_ETES_ICI}"/> 
+		<!-- BEGIN crumbs -->	
+			<!-- IF crumbs.IS_LINK -->
+			<a href="{crumbs.LINK}" title="{crumbs.TITLE}">{crumbs.NAME}</a>
+			<!-- ELSE -->
+				{crumbs.NAME}
+			<!-- ENDIF -->
+				<img src="design/ichthus/images/fleche_droite_rouge.gifc" alt="fleche rouge"/>
+		<!-- END crumbs -->
+		{CURRENT_CRUMB}
+	</div>
+	
+	<h2>{INFO_TITRE}</h2>
+	<div id="chapeau">{CONTENU_CHAPEAU}</div>
+	<!-- <p>{MESSAGE}</p> -->
+
+	<!-- <p>Nombre d'article trouvé : {NB_ARTICLE}</p> -->
+	
+	<!-- IF IS_NAVIGATION -->
+	<p>Previous &nbsp;	
+		<!-- BEGIN navigation -->
+			<a href="{navigation.LINK}" title="page">{navigation.NB}</a>&nbsp;
+		<!-- END navigation -->
+		&nbsp; Next</p>
+	<!-- ENDIF -->
+	
+		
+		<!-- IF IS_SELECTION -->
+			<!-- <p> 			Recherche : {CRITERIUM} = {VALUE} 			</p> -->
+		<!-- ENDIF -->
+	
+	<!-- BEGIN article -->
+		<a class="article" href="{article.LIEN}" title="{article.TITRE}" >
+			<span class="article_titre"> {article.TITRE} </span><br/>
+			<span class="article_desc">
+				{article.DESCRIPTION}
+			</span>
+		</a>
+
+	<!-- END article -->
+</div><!-- #principal --> 

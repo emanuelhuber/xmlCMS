@@ -1,0 +1,34 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+<div id="principal">
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+		<!-- END info -->
+	
+	<h2>Supprimer le chaptire "{FORM_NOM}"</h2>
+		<p>(id = <code>{FORM_ID}</code>)</p>
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Supprimer ce chapitre ?</legend>
+				<p> Voulez-vous vraiment supprimer ce chapitre ???<br/>
+					<strong>Titre</strong> : {FORM_NOM} <br/>
+				</p>
+				<p><label><input type="radio" name="ok" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" checked="checked"/>Non</label><br/></p>
+				<p><em>Attention,</em> le pages contenues dans ce chapitre ne seront pas supprimées. Seul le chapitre sera supprimé.</p>
+				
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	
+	{CONTENU}
+</div><!-- #principal --> 

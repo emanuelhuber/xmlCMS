@@ -1,0 +1,225 @@
+﻿<script>
+
+//Code pour l'exemple 3
+function refresh(event){
+	//On sélectionne le premier et le deuxième fieldset
+	var text_fieldset = document.getElementById("dynamic");
+	
+	/*
+	//On récupère la position de notre champ texte
+	var node_source = (document.all)?event.srcElement:event.target;
+	var position = node_source.previousSibling.nodeValue.split(" ")[1];
+	
+	//On récupère la valeur dans la champ texte
+	var labels = text_fieldset.getElementsByTagName("div");
+	var label = labels[position-1];
+	var input = label.getElementsByTagName("input")[0];
+	*/
+	
+
+}
+
+function del(i){
+	var node = document.getElementById("id_input_"+i);
+	var input = node.getElementsByTagName("input")[0];
+	
+	if(input.getAttribute("checked")=="checked")
+		var checked = true;
+		
+	var parent = document.getElementById("id_input_"+i).parentNode;
+	parent.removeChild(document.getElementById("id_input_"+i));
+	
+	//on sélectionne le premier fieldset et on récupère tous les label qu'il y a à l'intérieur
+	var text_fieldset = document.getElementById("dynamic"); 
+	var divs = text_fieldset.getElementsByTagName("div");
+	
+
+	//On renumérote les élements selon leur nouvel ordre
+	for(var i=1;i<=divs.length;i++){
+		var div = divs[i-1];
+		var inputRadio = div.getElementsByTagName("input")[0]
+		var inputText = div.getElementsByTagName("input")[1]
+		var lien_del = div.getElementsByTagName("a")[0]
+		if(checked==true && i==1){
+			var input = div.getElementsByTagName("input")[0];
+			input.setAttribute("checked", "checked");
+		}
+		
+		if(lien_del!=null)
+			lien_del.setAttribute("href","javascript:del("+ i +")");
+		
+		div.setAttribute("id", "id_input_"+i);
+
+		inputRadio.setAttribute("value",i);
+		inputText.setAttribute("name","quiz[reponse]["+ i +"]");
+		
+	}
+	
+	// si il n'y a plus que 2 div, alos
+	// on supprime les liens supprimer!
+	var divs = text_fieldset.getElementsByTagName("div");
+	var div1 = divs[0];
+	var div2 = divs[1];
+	if(divs.length<=2){
+		var link = div1.getElementsByTagName("a")[0];
+		var parentLink = link.parentNode;
+		parentLink.removeChild(link);
+		var link = div2.getElementsByTagName("a")[0];
+		var parentLink = link.parentNode;
+		parentLink.removeChild(link);
+	}
+
+}
+
+function add(){
+	//On compte le nombre de label et on sélectionne le premier fieldset
+	var text_fieldset = document.getElementById("dynamic");
+	var count = text_fieldset.getElementsByTagName("div").length;
+	count ++;
+	
+	var divs = text_fieldset.getElementsByTagName("div");
+	
+	//var nbDiv = div.length;
+	if(divs.length == 2){
+		var div = divs[0];
+		lien_del = document.createElement("a");
+		lien_del.setAttribute("href","javascript:del(1)");
+		var del_text = document.createTextNode("X");
+		lien_del.appendChild(del_text);
+		div.appendChild(lien_del);
+		
+		var div = divs[1];
+		lien_del = document.createElement("a");
+		lien_del.setAttribute("href","javascript:del(2)");
+		var del_text = document.createTextNode("X");
+		lien_del.appendChild(del_text);
+		div.appendChild(lien_del);
+	}
+	//On décalle d'un cran inférieur tous les éléments situé après l'élément à supprimer
+	if(divs.length>1){
+		for(var i=1;i<=divs.length;i++){
+			var div = divs[i-1];
+			div.setAttribute("id", "id_input_"+i);
+			var inputRadio = div.getElementsByTagName("input")[0]
+			var inputText = div.getElementsByTagName("input")[1]
+			var lien_del = div.getElementsByTagName("a")[0]
+			inputRadio.setAttribute("value",i);
+			inputText.setAttribute("name","quiz[reponse]["+ i +"]");
+			if(lien_del!=null)
+				lien_del.setAttribute("href","javascript:del("+ i +")");
+			
+		
+		}
+	}
+	
+	//création du label( <input type="radio" name="quiz[bonne]" value="{reponses. REPONSENO}" {reponses. CHECKED}/>)  
+	var radio = document.createElement("input");
+	radio.setAttribute("type","radio");
+	radio.setAttribute("name","quiz[bonne]");
+	radio.setAttribute("value",count);
+	
+	//création du label( <input type="text" name="quiz[reponse][{reponses. REPONSENO}]" value="{reponses. REPONSE}" size="50" maxlength="450"/> <br/>)  
+	var input = document.createElement("input");
+	input.setAttribute("type","text");
+	input.setAttribute("name","quiz[reponse]["+ count +"]");
+	input.setAttribute("size","50");
+	input.setAttribute("maxlength","450");
+	
+	var backspace = document.createTextNode(" ");
+	
+	/*
+	if(document.all) input.attachEvent("onkeyup",refresh);
+	else input.addEventListener("keyup",refresh,true);
+	if(document.all) radio.attachEvent("onkeyup",refresh);
+	else radio.addEventListener("keyup",refresh,true);
+	*/
+	
+	// Création du Label
+	//var nom_label = document.createTextNode(count+" ");
+	//var label = document.createElement("label");
+
+	
+    // Création du div 	(<div  id="id_input_1">)
+	var div = document.createElement("div");
+	div.setAttribute("id", "id_input_"+count);
+	
+	//Création des élement br et p ( <a href="javascript:del(2)">X</a><br/> )
+	var br = document.createElement("br");
+	var del_text = document.createTextNode("X");
+	var lien_del = document.createElement("a");
+	lien_del.setAttribute("href","javascript:del("+ count +")");
+
+	
+	lien_del.appendChild(del_text);
+	
+	//label.appendChild(nom_label);
+	div.appendChild(radio);
+	div.appendChild(backspace);
+	div.appendChild(input);
+	div.appendChild(input);
+	
+	//div.appendChild(label);
+	div.appendChild(lien_del);
+	div.appendChild(lien_del);
+	
+	//On raccroche ici tous nos éléments virtuelles à une balises de notre fichier XHTML. Ils sont alors afficher	
+	text_fieldset.appendChild(div);
+
+}
+</script>
+
+
+
+<div id="secondaire">
+	
+</div><!-- #secondaire -->
+
+<div id="principal">	
+	<h2>Edition du Quiz "{NOMPAGE}"</h2>
+
+	<em>{DESCRIPTION}</em><br/>
+		<br/>
+		<!-- <p>
+			<a href="{LIEN-EDITER}" title="Editer la page d'accueil de la collection d'article {NOMPAGE}">
+				<img src="design/images/editerAccueil.png" alt="Editer la page d'accueil"/></a>
+				&nbsp;&nbsp;
+			<a href="{LIEN-EDITER}" title="Editer la page d'accueil de la collection d'article {NOMPAGE}">Editer la page d'accueil de la collection d'article "{NOMPAGE}"</a>
+		</p> -->
+		<br/>
+
+		
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">		
+		
+		<fieldset class="contenu">
+			<legend>Quiz</legend>
+				<p>	<label>Question <input type="text" name="quiz[question]" value="{QUESTION}" size="50" maxlength="450"/></label></p>
+				<p>	<label>Réponses </label>	<br/>
+
+					<div id="dynamic">
+						<!-- <p class="lien" onclick="javascript:add()">Ajouter un champ texte</p><br> -->
+						
+
+					<!-- BEGIN reponses -->
+						<div  id="id_input_{reponses.REPONSENO}"><input type="radio" name="quiz[bonne]" value="{reponses.REPONSENO}" {reponses.CHECKED}/>
+						<input type="text" name="quiz[reponse][{reponses.REPONSENO}]" value="{reponses.REPONSE}" size="50" maxlength="450"/><a href="javascript:del({reponses.REPONSENO})">X</a></div>
+					<!-- END reponses -->
+				
+					</div>
+						<p><a href="javascript:add()">Ajouter un champ texte</a></p>
+				</p>
+				<p>	<label>Explication <br/>
+				<textarea name="quiz[explication]" cols="50" rows="6" id="explication">{EXPLICATION} </textarea>
+				</label></p>
+
+				<br/>
+				<br/>
+		
+		</fieldset>
+		<input type="reset" name="nom" value="" class="refresh" />
+		<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer"  class="wymupdate"/>
+		<a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a>
+	</form>
+</div><!-- #principal --> 
+
+
+

@@ -1,0 +1,32 @@
+<div id="secondaire">
+
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal_large">
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+	
+	<h1>Supprimer le cache</h1>
+	<h2>Qu'est-ce que le cache ?</h2>
+	<p>C'est...</p>
+	<h2>Supprimer le cache, quelle conséquence ?</h2>
+	<p>Blablabla</p>
+	<hr/>
+
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+		<!-- <fieldset class="rubrique">
+			<legend>Supprimer le cache</legend>
+		</fieldset> -->
+		<input type="submit" name="nom" value="Supprimer le cache"/>
+	</form>
+
+	
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

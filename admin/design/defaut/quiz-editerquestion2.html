@@ -1,0 +1,134 @@
+﻿<script>
+function createFeld(i) {
+	var i2 = i + 1;
+	document.getElementById('feld_'+i).innerHTML = '<input type="radio" name="quiz[bonne]" value="'+i+'"/>&nbsp;'
+													+ '<input type="text" name="quiz[reponse]['+i+']" value="" size="50" maxlength="450"/> <br/>';
+	document.getElementById('feld_'+i).innerHTML += (i <= 10) ? '<span id="feld_'+i2+'"><a href="javascript:createFeld('+i2+')">Ajouter un champs</a></span>' : '';
+}
+
+function deletFeld(i){
+	var parent = document.getElementById("feld_"+i).parentNode;
+	parent.removeChild(document.getElementById("feld_"+i));
+}
+
+
+	
+
+
+	var nb_tags = 0; // compteur
+
+	function AjouterTag(){ 
+		
+		var tag = document.getElementById('ContentTagOeil').value;
+		
+	   	if (tag.length<=3) {
+	   		alert("Vous devriez remplir ce champs avec un terme de plus de trois lettres");
+	   		document.getElementById('ContentTagOeil').focus();
+	   	} 
+	
+		else {
+			
+			var new_span = document.createElement('span'); // on crée un nouvel élément HTML
+			
+			new_span.id = 'tag' + nb_tags; // on lui donne un identifiant
+			
+			new_span.innerHTML = tag; // on insère le 'tag'
+			new_span.innerHTML += ' (<a href="javascript:SupprimerTag(\'tag' + nb_tags + '\')">X</a>), '; // on complète avec le lien pour retirer le tag
+			
+			document.getElementById('wrap').appendChild(new_span); // on insère l'objet
+			
+			nb_tags++; // on incrémente le compteur
+			
+	   	}
+	//	return false;
+	}
+
+	function SupprimerTag(id){ 
+
+		document.getElementById('wrap').removeChild(document.getElementById(id));		
+		//return false;
+
+	}
+	
+
+
+
+</script>
+
+
+<div id="secondaire">
+	
+</div><!-- #secondaire -->
+
+<div id="principal">	
+	<h2>Edition du quiz "{NOMPAGE}"</h2>
+
+	<em>{DESCRIPTION}</em><br/>
+		<br/>
+		<!-- <p>
+			<a href="{LIEN-EDITER}" title="Editer la page d'accueil de la collection d'article {NOMPAGE}">
+				<img src="design/images/editerAccueil.png" alt="Editer la page d'accueil"/></a>
+				&nbsp;&nbsp;
+			<a href="{LIEN-EDITER}" title="Editer la page d'accueil de la collection d'article {NOMPAGE}">Editer la page d'accueil de la collection d'article "{NOMPAGE}"</a>
+		</p> -->
+		<br/>
+
+		
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+		
+		<fieldset>
+<legend>Tags</legend>
+<input type="text" id="ContentTagOeil" /> <a href="#" title="Ajouter ce tag" onclick="AjouterTag();return false;">Ajouter ce tag</a>
+
+<div id="wrap"><!-- VOICI LE WRAP UTILISE POUR INSERER LES TAGS --></div>
+
+</fieldset>
+
+		
+		
+		<fieldset>
+<legend>&OElig;il</legend>
+<input type="text" id="ContentTagOeil" /> <a href="#" title="Ajouter ce tag" onclick="AjouterTag();return false;">Ajouter ce tag</a>
+<p>Ambre (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>), claire (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>)</p>
+</fieldset>
+
+<fieldset>
+<legend>Nez</legend>
+<input type="text" id="ContentTagNez" /> <a href="#" title="Ajouter ce tag" onclick="AjouterTag();return false;">Ajouter ce tag</a>
+<p>puissant (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>), légé (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>)</p>
+</fieldset>
+
+<fieldset>
+<legend>Bouche</legend>
+<input type="text" id="ContentTagBouche" /> <a href="#" title="Ajouter ce tag" onclick="AjouterTag();return false;">Ajouter ce tag</a>
+<p>Tannique (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>), chêne (<a href="#" title="Supprimer ce tag" onclick="SupprimerTag();return false;">X</a>)</p>
+</fieldset>
+
+		
+		
+		<fieldset class="contenu">
+			<legend>Quiz</legend>
+				<p>	<label>Question <input type="text" name="quiz[question]" value="{QUESTION}" size="50" maxlength="450"/></label></p>
+				<p>	<label>Réponses </label>	<br/>
+				<!-- BEGIN reponses -->
+					<input type="radio" name="quiz[bonne]" value="{reponses.REPONSENO}" {reponses.CHECKED}/>
+					 <input type="text" name="quiz[reponse][{reponses.REPONSENO}]" value="{reponses.REPONSE}" size="50" maxlength="450"/> <br/>
+				<!-- END reponses -->
+					 <span id="feld_{NB_QUESTION_PLUS_UN}"><a href="javascript:createFeld({NB_QUESTION_PLUS_UN})">Ajouter un champ</a></span>
+				</p>
+				<p>	<label>Explication <br/>
+				<textarea name="quiz[explication]" cols="50" rows="6" id="explication">{EXPLICATION} </textarea>
+				</label></p>
+
+				<br/>
+				<br/>
+		
+		</fieldset>
+		<input type="reset" name="nom" value="" class="refresh" />
+		<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer"  class="wymupdate"/>
+		<a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a>
+	</form>
+</div><!-- #principal --> 
+
+
+

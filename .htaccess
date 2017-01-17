@@ -1,0 +1,11 @@
+RewriteEngine on
+# Options +FollowSymlinks
+RewriteRule  ^(.+),(.+),(.+)\.html$ \index.php	[NC,L]
+#RewriteRule ^(.+)\.html$ \index.php	[NC,L]
+RewriteRule ^(.+)\.csszip$ \index.php	[NC,L]
+RewriteRule ^(.+)\.jszip$ \index.php	[NC,L]
+# pour les trucs compressé
+# genre pngc, bmpc, jpegc etc.
+RewriteRule ^(.+)\.(.+)c$ \index.php	[NC,L]
+
+RewriteBase /xmlCMS

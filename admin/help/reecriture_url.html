@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Ré-écriture d'url</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Ré-écriture d'url</h1>
+
+	<h2>URL - Définition (source : wikipedia)</h2>
+	<blockquote>Le sigle URL (de l'anglais Uniform Resource Locator, littéralement «&nbsp;localisateur uniforme de ressource&nbsp;»),
+	auquel se substitue informellement le terme adresse web, désigne une chaîne de caractères utilisée pour 
+	adresser les ressources du World Wide Web : document HTML, image, son, forum Usenet, boîte aux lettres 
+	électronique, etc. Les URL constituent un sous-ensemble des identifiants uniformisés de ressource (URI). 
+	Le format (syntaxe) d'une URL est décrit dans le RFC 3986.</blockquote>
+	
+	<p>Quelques exemples pratiques&#160;:</p>
+<ul>
+<li>URL de <a href="/wiki/Wikip%C3%A9dia" title="Wikipédia">Wikipédia</a>&#160;:<br />
+<code><a href="http://fr.wikipedia.org/" class="external free" rel="nofollow">http://fr.wikipedia.org/</a></code></li>
+<li>URL de cette <a href="/wiki/Page_web" title="Page web" class="mw-redirect">page</a> sur Wikipédia&#160;:<br />
+
+<code><a href="http://fr.wikipedia.org/wiki/Uniform_Resource_Locator" class="external free" rel="nofollow">http://fr.wikipedia.org/wiki/Uniform_Resource_Locator</a></code></li>
+<li>URL d'un <a href="/wiki/Fichier_(informatique)" title="Fichier (informatique)" class="mw-redirect">fichier</a> sur un site <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a>&#160;:<br />
+<code><a href="ftp://ftp.rfc-editor.org/in-notes/rfc2396.txt" class="external free" rel="nofollow">ftp://ftp.rfc-editor.org/in-notes/rfc2396.txt</a></code></li>
+<li>URL d'un <a href="/wiki/Mailto" title="Mailto">lien (mailto)</a> vers une <a href="/wiki/Adresse_%C3%A9lectronique" title="Adresse électronique">adresse courriel</a>&#160;:<br />
+
+<code><a href="mailto:Quidam.no-spam@example.com" class="external free" rel="nofollow">mailto:Quidam.no-spam@example.com</a></code></li>
+<li>URL d'un forum de discussion de <a href="/wiki/Usenet" title="Usenet">Usenet</a>&#160;:<br />
+<code><a href="news:fr.comp.infosystemes.www.auteurs" class="external free" rel="nofollow">news:fr.comp.infosystemes.www.auteurs</a></code></li>
+<li>URL d'un site <a href="/wiki/Gopher" title="Gopher">Gopher</a>&#160;:<br />
+<code><a href="gopher://gopher.quux.org/" class="external free" rel="nofollow">gopher://gopher.quux.org/</a></code></li>
+</ul>
+
+<p>Dans notre cas on s'intéressera essentiellement aux url du type : <code>www.monSite.com/ma_page.html</code></p>
+
+	
+	<h2>Présentation de la réécriture d'url (source : WebRankInfo)</h1>
+	<p><a href="http://www.webrankinfo.com/dossiers/debutants/url-rewriting" title="Lien vers l'article original">Par Olivier Duffez, Lundi 4 août 2008</a></p>
+	
+	<p>L'URL Rewriting (réécriture d'URL en bon français) est une technique utilisée pour 
+	optimiser le référencement des sites dynamiques (utilisant des pages dynamiques). Les pages 
+	dynamiques sont caractérisées par des URL complexes, comportant en général un point 
+	d'interrogation, éventuellement le caractère & ainsi que des noms de variables et 
+	des valeurs.</p>
+
+	<p>Exemple : <code>article.php?id=12&page=2&rubrique=5</code></p>
+
+	<p>Dans cet exemple, le fichier <span class="code">article.php</span> est utilisé pour afficher un article dont le texte vient
+	d'une base de données. C'est un fichier générique,
+	qui peut afficher n'importe quel article, de n'importe quelle rubrique,
+	page par page. Ici on cherche à afficher la page 2 de l'article
+	numéro 12 qui fait partie de la rubrique 5.</p>
+	<p>Le problème est que certains moteurs n'indexent
+	pas les pages ayant des URL de ce type. Google par exemple n'indexe
+	en général que les pages ayant au maximum 2 paramètres
+	dans l'URL : il n'indexe donc pas une page comme celle de notre
+	exemple.</p>
+	<p>Grâce à l'URL Rewriting, Google ainsi
+	que n'importe quel robot va pouvoir indexer les pages dynamiques.
+	L'intérêt est par exemple d'avoir plusieurs milliers
+	de pages de votre site indexées dans Google (le catalogue
+	de tous vos produits, votre forum, etc.).</p>
+	<p><!--more--></p>
+	<p></p>
+	<h2>URL Rewriting&nbsp;: comment ça marche&nbsp;?</h2>
+	<p>Le principe est très simple&nbsp;: sur un site
+	qui utilise l'URL Rewriting, on ne peut plus se rendre compte qu'il
+	est basé sur des pages dynamiques. En effet, les URL sont
+	"propres" : elles ne contiennent plus tous les caractères
+	spéciaux comme&nbsp;? ou &amp;. Personne ne peut savoir qu'il
+	s'agit de pages dynamiques, que ce soit un robot d'indexation ou
+	un internaute.</p>
+
+	<p>Le webmaster doit changer la façon dont
+	il écrit les liens, selon des règles qu'il va se fixer
+	lui-même. En reprenant l'exemple ci-dessus, on peut remarquer
+	que les URL pour les pages d'articles ont toutes la même forme.
+	On va donc changer nos scripts PHP et nos liens à l'intérieur
+	du site selon le modèle suivant : <code>article_12_2_5.html</code></p>
+	<p>Quand un internaute demande cette page, le serveur
+	va appliquer une règle de réécriture d'URL
+	(décrite dans un <a href="http://fr.wikipedia.org/wiki/.htaccess">fichier
+	.htaccess</a>) et renvoyer la même chose que si l'internaute
+	avait demandé la page <code>article.php?id=12&amp;page=2&amp;rubrique=5</code>.</p>
+	<p>Remarque&nbsp;: même si l'URL Rewriting est mis
+	en place, on peut toujours accéder aux pages en utilisant
+	l'ancienne URL. Il faut donc veiller à changer tous les liens
+	à l'intérieur de son site pour qu'ils soient tous
+	au nouveau format.</p>
+	
+
+	<p></p>
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

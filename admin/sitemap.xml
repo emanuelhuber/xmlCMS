@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed>
+  <title>Site Map</title>
+  <updated>2011-08-14T16:08:41+02:00</updated>
+  <id>/www/interstitium</id>
+  <entry ref="de,page,guilde">
+    <title>La guilde</title>
+    <id>de,page,guilde</id>
+    <updated>2011-08-13T19:27:51+02:00</updated>
+    <link href="www"/>
+    <summary>Description de la page (doit donner un aperçu du contenu de la page)</summary>
+    <right>-1</right>
+    <publication/>
+  </entry>
+  <entry ref="de,page,les-aventuriers-route-pour-aventure">
+    <title>Les aventuriers... en route pour l'aventure !</title>
+    <id>de,page,les-aventuriers-route-pour-aventure</id>
+    <updated>2011-08-13T19:28:09+02:00</updated>
+    <link href="www"/>
+    <summary>Description de la page (doit donner un aperçu du contenu de la page)</summary>
+    <right>-1</right>
+    <publication/>
+  </entry>
+  <entry ref="fr,page,il-etait-une-fois-dans-ouest">
+    <title>Il était une fois dans l'Ouest</title>
+    <id>fr,page,il-etait-une-fois-dans-ouest</id>
+    <updated>2011-08-14T16:08:41+02:00</updated>
+    <link href="www"/>
+    <summary>description</summary>
+    <right>-1</right>
+    <publication/>
+  </entry>
+</feed>

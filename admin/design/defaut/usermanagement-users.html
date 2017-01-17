@@ -1,0 +1,57 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal_large">
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+	<!-- END info -->
+	
+	<h1>Gestion des utilisateurs</h1>
+	
+	<div id="wrapper">
+	    <ul class="tabs">
+			<li class="selected"><a href="{LINK_USER}">Utilisateurs</a></li>
+			<li><a href="{LINK_ADD_USER}" title="Ajouter un utilisateur">Ajouter un utilisateur</a></li>
+		</ul>
+		<div class="edit">
+			<table>
+				<tr>
+					<th>Pseudo</th>
+					<th>Groupe</th>
+					<th>Email</th>
+					<th>Droits</th>
+					<th>Correctement déconnecté ?</th>
+					<th>Date de déconnection</th>
+					<th>Editer</th>
+					<th>Supprimer</th>
+				</tr>
+			<!-- BEGIN list -->
+				<tr>
+					<td>{list.USERNAME}</td>
+					<td>{list.GROUPNAME}</td>
+					<td>{list.EMAIL}</td>
+					<td>{list.DROITS}</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!-- IF list.T_LOGOUT -->
+						<img src="design/defaut/images/green_shield.png" alt="L'utilisateur s'est correctement déconnecté"/>
+					<!-- ELSE -->
+						<img src="design/defaut/images/red_shield.png" alt="L'utilisateur ne s'est pas correctement déconnecté"/>
+					<!-- ENDIF -->
+					</td>
+					<td>{list.DATE}</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{list.LINK_EDIT}" title="Editer l'utilisateur"><img src="design/defaut/images/editer-page.png" alt="Editer l'utilisateur"/></a></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{list.LINK_DELETE}" title="Supprimer l'utilisateur"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer l'utilisateur"/></a></td>
+				</tr>
+			<!-- END list -->
+			</table>
+		</div>
+	</div><!-- #wrapper -->
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

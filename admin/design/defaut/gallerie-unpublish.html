@@ -1,0 +1,79 @@
+<script type="text/javascript">
+<!--
+
+$(function() {
+	$('#datepicker').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat: 'dd.mm.yy'
+	});
+});
+-->
+
+</script>
+<div id="principal_large">	
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+		<!-- END info -->
+		<!-- <form class="flux" name="add_flux" method="POST" action="{ADD_FLUX_CIBLE}">
+			<input type="image" name="nom" src="design/defaut/images/feed_add.png"  title="Add flux (RSS/Atom)" />
+		</form> -->
+	<div id="wrapper">
+		<h1>Edition de l'article «&nbsp;{FORM_TITRE}&nbsp;»</h1>
+		<p><!-- IF IS_ONLINE -->
+			<img src="design/defaut/images/published-small.png" alt="l'article est publié (online)" title="l'article est publié (online)"/>
+		<!-- ELSE -->
+		 <img src="design/defaut/images/unpublished-small.png" alt="L'article n'est pas publié (offline)" title="L'article n'est pas publié (offline)"/>
+		<!-- ENDIF --> 
+		<!-- IF HAS_RIGHT -->
+		<!-- ELSE -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> <code>{FORM_ID}</code></p>
+		<!-- <p><strong>...dans la collection d'articles : "<a href="{LINK_INDEX}">{TITRE_COLLECTION}</a>"</strong>&nbsp;:<br/>
+		<em>{FORM_DESCRIPTION}</em></p> -->
+		
+		<ul class="tabs">
+		<!-- 	<li><a href="{LINK_INDEX}">Index</a></li>
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li> -->
+			<li><a href="{LINK_EDITCONTENT_ARTICLE}">Editer article</a></li>
+			<li><a href="{LINK_EDITINFO_ARTICLE}">Editer info article</a></li>
+			<li class="selected"><a href="{LINK_UNPUBLISH_ARTICLE}">Retirer l'article (passer en mode brouillon)</a></li>
+			<!-- <li><a href="{LINK_EDITCONTENT}">Editer le contenu</a></li> -->
+		</ul>
+
+		<!-- Editer les infos -->
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Retirer l'article</legend>
+				
+				Voulez-vous vraiment retirer l'article ?
+				<p><label><input type="radio" name="ok" checked="checked" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" />Non</label><br/></p>
+				
+				<input type="hidden" name="add_flux" id="add_flux" value="{TOKEN}"/> 
+		
+				
+				<p>Retirer l'article (= le faire passer en mode brouillon) fera que l'article ne sera plus
+				accessible pour les visiteurs du site.<br/>
+				Cependant vous aurez toujours la possibilité d'éditer l'article et de le remettre en ligne.
+				</p>
+	
+			</fieldset>
+				
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div><!-- #wrapper -->
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

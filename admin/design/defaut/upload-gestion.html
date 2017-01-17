@@ -1,0 +1,66 @@
+
+
+
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	
+<h2>Gestion des documents</h2>
+	<p>
+		<ul class="tabs">
+			<!-- BEGIN folders -->
+				<li class="{folders.SELECTED}"><a href="{folders.LINK}"><img src="{folders.SRC}" alt="{folders.NAME}"/>{folders.NAME}</a></li>
+			<!-- END folders -->
+		</ul>
+	</p>
+	<hr/>
+	
+
+
+	<!-- BEGIN liste -->
+	<div class="freeBox">
+		<p class="corner-top-right">
+			<a href="{liste.LINK_EDIT}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+			<a href="{liste.LINK_DELETE}" title="Supprimer le fichier"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer le fichier"/></a>
+		</p>
+		<p><a href="{liste.URL}" title="{liste.DESCRIPTION}">
+		<img 
+			<!-- IF liste.IS_IMAGE --> 
+			height="72px" 
+			<!-- ENDIF --> 
+			src="{liste.SRC}" alt="{liste.DESCRIPTION}"/>
+		</a></p>
+		<!-- IF liste.IS_IMAGE --> 
+		<!-- ELSE -->
+		<p><a href="{liste.URL}" title="{liste.DESCRIPTION}">{liste.TITLE}</a></p>
+		<!-- ENDIF --> 
+		<span
+			<!-- {liste.EXT} -->
+	</div>
+	<!-- END liste -->
+
+<!-- <table>
+	<tr>
+		<th>Miniature</th>
+		<th>Titre</th>
+		<th>Extension</th>
+		<th>Copyright</th>
+		<th>Description</th>
+		<th></th>
+	</tr>
+	<tr>
+		<td><img src="{liste.SRC}" alt="icone"/></td>
+		<td><a href="{liste.URL}" title="{liste.TITLE}">{liste.TITLE}</a></td>
+		<td>{liste.EXT}</td>
+		<td>{liste.COPYRIGHT}</td>
+		<td>{liste.DESCRIPTION}</td>
+		<td></td>
+
+	</tr>
+</table> -->
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

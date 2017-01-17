@@ -1,0 +1,44 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	
+	<h1>Créer un nouveau contenu</h1>
+
+	<p> Choisissez la langue dans laquelle le contenu sera publié ainsi que le type de contenu (= module).
+	</p>
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+		
+		<fieldset class="rubrique">
+			<legend>Nouveau contenu</legend>
+			<p><label>Titre du contenu <input type="text" name="page[titre]" value="" size="50" maxlength="150"/></label></p>
+			<p><label>Nom de la page (url), optionel.<br/> Charactères autorisés: [a-z]+[0-9]; mots séparés par des tirets "-"<br/> 
+				<input type="text" name="page[fileId]" value="" size="50" maxlength="150"/></label></p>
+			<p>	<label>Langue 	<select name="page[langue]" size="1">
+									<!-- BEGIN langue -->
+										<option value="{langue.ID}">{langue.NOM}</option>
+									<!-- END langue -->
+								</select>
+				</label>
+			</p>
+			<p>	<label>Module 	<select name="page[module]" size="1">
+									<!-- BEGIN module -->
+										<option value="{module.ID}">{module.NOM}</option>
+									<!-- END module -->
+								</select>
+				</label>
+			</p>
+			<p>	<label>Theme / style 	<select name="page[themestyle]" size="1">
+									<!-- BEGIN themestyle -->
+										<option value="{themestyle.ID}">{themestyle.NOM}</option>
+									<!-- END themestyle -->
+								</select>
+				</label>
+			</p>
+		</fieldset>
+		<input type="submit" name="nom" value="OK"/>
+	</form>
+	
+	{CONTENU}
+</div><!-- #principal --> 

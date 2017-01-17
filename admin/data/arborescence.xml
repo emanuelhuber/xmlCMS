@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <langue id="fr" nom="Français">
+    <page id="fr,menu,index" module="menu" nom="MENU" soeur="" menu="1" publication="1" droits="-1"/>
+    <page id="fr,design,index" module="menu" nom="DESIGN" soeur="" menu="1" publication="1" droits="-1"/>
+    <rubrique id="fr,plugin,rub" module="rubrique" nom="PLUGINS" menu="1" publication="1" droits="-1">
+      <page id="fr,plugin,index" module="module" nom="Index" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,plugin,inclureencart" module="module" nom="Encart" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,plugin,googlemap" module="module" nom="Google Map" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,plugin,diaporama" module="module" nom="Diaporama" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,plugin,citationaleatoire" module="module" nom="Citation aléatoire" soeur="" menu="1" publication="1" droits="-1"/>
+    </rubrique>
+    <rubrique id="fr,usermanager,index" module="rubrique" nom="UTILISATEURS" menu="1" publication="1" droits="-1">
+      <page id="fr,usermanager,rights" module="usermanager" nom="Droits" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,usermanager,groups" module="usermanager" nom="Groupes" soeur="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,usermanager,users" module="usermanager" nom="Utilisateurs" soeur="" menu="1" publication="1" droits="-1"/>
+    </rubrique>
+    <rubrique id="fr,upload,index" module="rubrique" nom="DOCUMENT" menu="1" publication="1" droits="-1">
+      <page id="fr,upload,fichier" module="upload" nom="Upload" soeur-de="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,upload,gestion" module="upload" nom="Gestionnaire" soeur-de="" menu="1" publication="1" droits="-1"/>
+      <page id="fr,upload,check" module="upload" nom="Check" soeur-de="" menu="1" publication="1" droits="-1"/>
+    </rubrique>
+    <page id="fr,sitemap,index" module="sitemap" nom="SITE MAP" soeur="" menu="1" publication="1" droits="-1"/>
+    <page id="fr,configuration,editer" module="menu" nom="CONFIGURATION" soeur="" menu="1" publication="1" droits="-1"/>
+    <page id="fr,module,index" module="module" nom="MODULES" soeur="" menu="1" publication="1" droits="0"/>
+    <page id="fr,dictionnaire,index" module="module" nom="DICTIONNAIRE" soeur="" menu="1" publication="1" droits="0"/>
+    <page id="fr,cache,index" module="module" nom="CACHE" soeur="" menu="1" publication="1" droits="0"/>
+    <page id="fr,erreur" module="erreur" nom="Erreur" soeur="" menu="0" publication="1" droits="-1"/>
+  </langue>
+   <langue id="en" nom="english"/>
+</menu>

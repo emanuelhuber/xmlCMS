@@ -1,0 +1,51 @@
+<div id="secondaire">
+	<p><img src="design/defaut/images/idea.png" width="50px"/>
+		Si vous supprimez un MOT, ce MOT sera supprimé dans toutes langues.
+		Si vous ajoutez un MOT, ce MOT sera ajouté dans toutes les langues.
+	</p>
+	<p>Dans les templates HTML, vous pouvez intégrez les MOTS du dictionnaires sour la forme 
+	<code>&#123;L_MOT&#125;</code> et la définition sera automatiquement remplacé en fonction de la langue active. </p>
+	
+
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h1>"Dictionnaire"</h1>
+	<!-- AJOUTER UNE CLEF -->
+	<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+		<fieldset class="rubrique">
+			<legend><img src="design/defaut/images/plus.png" alt="Créer un article"/> Ajouter un MOT</legend>
+			<p><label>Nom du MOT &nbsp;&nbsp;<input type="text" name="tag" value="" size="50" maxlength="150"/></label>
+			<input type="submit" name="nom" value="OK"/></p>
+		</fieldset>
+	</form>	
+	
+	<p>
+		<!-- BEGIN langues -->
+		<a href="{langues.LINK}" title="{langues.ID}" class="drapeau{langues.ACTIVE}"><img alt="{langues.ID}" src="design/defaut/images/drapeau_{langues.ID}.pngc"/></a>
+		<!-- END langues -->
+	</p>
+	
+	<!-- MODIFIER LES TRADUCTIONS -->
+	<form class="edit" name="editContent" method="POST" action="{FICHIER_CIBLE}">	
+		<fieldset class="contenu">
+				<!-- BEGIN mots -->
+					<p><label>{mots.TAG} 
+					<a href="{mots.LINK_DELETE}" title="Supprimer le mot"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer le mot"/></a>
+					&nbsp;&nbsp;<input type="text" name="def[]" value="{mots.DEF}" size="50" maxlength="150"/></label></p>
+				<!-- END mots -->
+				
+				<!-- <label> Contenu<br/>
+				<textarea name="content" cols="80" rows="30" class="wymeditor"> {CONTENT}</textarea>
+				</label> -->
+		</fieldset>
+			
+			
+		<input type="reset" name="nom" value="" class="refresh" />
+		<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+		<a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a>
+	</form>
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

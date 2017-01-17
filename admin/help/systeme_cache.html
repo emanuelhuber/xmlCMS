@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Système de cache</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Système de cache</h1>
+	
+	<p>Il y a différent type de cache. Mettre des données en cache signifie que une fois qu'on a eu accès à des données,
+	on les sauvegarde à un endroit où on pourra rapidement à y avoir accès. Il y a différent type de cache.</p>
+	<h2>Cache html côté serveur</h2>
+	<p>Dans le cas normal, le navigateur demande au serveur une page <code>.html</code>. Le serveur reçoit la demande, l'analyse et
+	va chercher dans les fichiers <code>.xml</code> l'information nécessaire à la création de la page. Une fois la page créée, le
+	serveur l'envoie au navigateur qui va l'afficher. Si la navigateur redemande exactement la même page, le serveur va à nouveau
+	analyser la demande et chercher dans les fichiers <code>.xml</code> l'information nécessaire à la création de la page puis
+	il l'affichera. Si les fichiers de données n'ont pas changé entre temps, exactement la même page sera affichée.</p>
+	<p>Pourquoi répéter plusieurs fois les mêmes opérations pour envoyer la même chose au navigateur ? L'idée du cache html côté serveur
+	est la suivante : la première fois, le navigateur demande une page <code>.html</code>. Le serveur reçoit la demande, l'analyse et
+	va chercher dans les fichiers <code>.xml</code> l'information nécessaire à la création de la page. Une fois la page créée, le
+	serveur la sauvegarde telle qu'elle est dans un dossier nommé <code>cache</code> et envoie la page au navigateur qui va l'afficher. La prochaine fois 
+	qu'on lui demandera cette page, le serveur regardera si elle n'a pas déjà été enregistrée dans le dossier <code>cache</code>. Si elle s'y trouve
+	et si cette sauvegarde n'est pas trop ancienne, alors il renverra cette page au navigateur (sinon il ira extraire les informations des
+	fichiers de données).</p>
+	<p><img class="center" alt="page internet simple" src="images/cache_html_serveur.png"/></p>
+
+	<h2>Cache html côté navigateur</h2>
+	<p>Quand le serveur envoie une page (en fait un fichier <code>.html</code>) au navigateur, le serveur peut aussi dire au navigateur :
+	"Tu peux sauvegarder cette page localement sur l'ordinateur parce qu'elle ne va pas changer jusqu'à demain". Ainsi la prochaine fois
+	que l'utilisateur veut accéder à cette page (avant le lendemain), le navigateur ne va même pas demander quelque chose au serveur, il va simplement afficher
+	la page qu'il a sauvegardé localement. L'avantage est que le serveur est laissé tranquille et que l'affichage de la page est beaucoup plus
+	rapide vu qu'il n'y a rien a télécharger. L'inconvénient est que si la page vient de changer (sur le serveur), il faudra soit attendre
+	le lendemain pour se rendre compte du changement soit supprimer le cache de navigateur (là où sont sauvegardés toutes les pages <code>.html</code>) localement.</p>
+	
+	<h2>Est-ce que la page a changée ?</h2>
+	<p>Une possibilité supplémentaire est de donner à chaque page ou fichier un code unique. Si, côté serveur, la page est modifiée (ce qui veut dire que les
+	fichiers de données ont été modifiés), le code associé à la page sera aussi modifié. Quand le navigateur demande au serveur
+	une page parce que sa copie locale est périmée, il donne au serveur le code de la page. Le serveur compare avec le code de la page côté serveur et
+	si c'est le même code (la page n'a pas changé), il répond au serveur : "c'est bon, la page n'a pas changée, pas besoin de la télécharger".</p>
+	
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

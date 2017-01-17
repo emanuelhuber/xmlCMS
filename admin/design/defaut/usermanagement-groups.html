@@ -1,0 +1,46 @@
+
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+	<!-- END info -->
+
+<h1>Gestion des groupes</h1>
+	<div id="wrapper">
+	    <ul class="tabs">
+			<li class="selected"><a href="{LINK_GROUP}">Groupes</a></li>
+			<li><a href="{LINK_ADD_GROUP}" title="Ajouter un groupe">Ajouter un groupe</a></li>
+		</ul>
+		<div class="edit">
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>Nom de groupe</th>
+					<th>Description</th>
+					<th>Droits</th>
+					<th>Edit</th>
+					<th>Suppr</th>
+				</tr>
+			<!-- BEGIN listgroup -->
+				<tr>
+					<td>{listgroup.ID}</td>
+					<td>{listgroup.GRP_NAME}</td>
+					<td>{listgroup.GRP_DESCRIPTION}</td>
+					<td>{listgroup.RIGHT}</td>
+					<td><a href="{listgroup.LINK_EDIT}" title="Editer le groupe"><img src="design/defaut/images/editer-page.png" alt="Editer le groupe"/></a></td>
+					<td><a href="{listgroup.LINK_DELETE}" title="Supprimer le groupe"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer le groupe"/></a></td>
+				</tr>
+			<!-- END listgroup -->
+			</table>
+		</div>	
+	</div><!-- #wrapper -->
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

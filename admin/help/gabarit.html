@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Gabarit</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	
+	<div id="contenu">
+	<h1>Gabarit</h1>
+	
+	<h2>Squelette et contenu</h2>
+	
+	<p>Considérant une page internet, on peut la décomposer en deux parties :</p>
+	<ul>
+		<li>Le squelette : l'entête, le menu, le pied de page. Cette partie ne change pas vraiment selon les pages.</li>
+		<li>Le contenu : l'article au centre de la page ainsi que les informations sur la droite.
+		Ce contenu est propre à chaque page.</li>
+	</ul>
+	
+	<p>
+	<img class="center" src="images/squelette_html.png"/>
+		Cette classification repose certe sur le design (cf. l'image au-dessus) mais ce qui est clair est qu'il
+		y a une partie constante (le squelette) tout au long des pages du site et une autre (le contenu) qui est propre à chaque page.
+	</p>
+	
+	<h2>Thème et style</h2>
+	<p>Le design respecte aussi cette classification. Il y a un gabarit (fichier <code>.html</code>) squelette ainsi qu'un gabarit lié
+	au type de page (module - ça peut être une page simple, un article d'une collection d'article, une gallerie d'image, un quiz etc.).</p>
+	
+	<p>Il peut exister différents thèmes. Un thème correspond à :</p>
+	<ul>
+		<li>un gabarit squelette</li>
+		<li>un gabarit pour chaque module</li>
+		<li>différents style (fichiers <code>.css</code>)</li>
+	</ul>
+	<p>En changeant de <em>thème</em>, vous changez les fichiers <code>.html</code>, ce qui signifie que vous changez de structure (autre organisation des
+	 données) mais aussi d'information (selon si des balises "{}" ont été ajouté ou supprimé).</p>
+	<p>En changeant de style, vous changez les fichiers <code>.css</code>, ce qui signifie que la structure et l'information reste la même mais que vous
+	 changer la taille, les couleurs, la police d'écriture, les fonds d'image, l'alignement etc.</p>
+
+	 <h2>Organisation des fichier</h2>
+	 <p>L'image ci-dessous présente l'organisation des dossiers. Le dossier <code>defaut</code> ne devrait jamais être supprimé, c'est le thème par défaut. 
+	 Dans le dossier de chaque thème devrait se trouver :</p>
+	 <ul>
+		<li> un fichier <code>squelette.html</code> correspondant au squelette du site (l'entête, le menu, le 
+	 pied de page).</li>
+		<li>des fichiers <code>.html</code> correspondant aux gabarits des modules (exemple: <code>page.html</code> le gabarit du module
+	 page ; <code>article.html</code> le gabarit du module article affichant l'article ; <code>article-index.html</code> le garbarit du module article 
+	 affichant l'index des articles etc.).</li>
+		<li>un ou des dossiers contenant le fichier de style. Le nom du dossier doit commencer par <code>css-</code>.</li>
+		<li>un dossier <code>images</code> contenant toutes les images liées au design.</li>
+		<li>un dossier <code>js</code> au besoin contenant des codes JavaScript liés design.</li>
+	 </ul>
+	
+	<p>
+	<img class="center" src="images/design_dossier.png"/>
+	</p>
+
+
+
+</div>
+</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

@@ -1,0 +1,28 @@
+﻿<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h2>{L_CONNECTION}</h2>
+			
+			<p class="alerte">{MESSAGE}</p>
+			
+		<form class="quiz" name="quiz" method="post" class="form" action="{FICHIER_CIBLE}">
+			<p><label for="name">{L_USERNAME} :</label>  <input type="text" name="username" id="username" size="40" value="{VALEUR_NOM}"/>
+			</p>
+			<p><label for="mail">{L_PASSWORD} :</label>  <input type="password" name="password" id="password" size="40" value="{VALEUR_MAIL}"/>
+			</p>
+			<input type="hidden" name="token" id="ok" value="{TOKEN}"/> 
+			
+			
+			<div class="right">
+				<input type="submit" value="Envoyer" name="suivant"/>
+				<input type="reset" value="Reset"/>
+			</div>
+			
+			<p>
+				<a href="{REF}" title="{RETOUR}!">{L_RETOUR}</a>
+			</p>
+		</form>
+	</div>
+</div><!-- #principal --> 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+	<info>
+		<titre>Design par defaut</titre>
+		<date>08/02/2010</date>
+		<auteur>Emanuel Huber</auteur>
+		<description>Un design simple, pure</description>
+		<motsclefs>bleu, blanc, simple</motsclefs>
+		<image></image>
+		<miniature></miniature>
+	</info>
+	<template>
+		<module id="squelette" squelette="squelette.html"/>
+		<module id="page" page="page.html"/>
+		<module id="article" article="article.html" index="articles-index.html"/>
+		<module id="quiz" question="quiz-question.html" reponse="quiz-reponse.html" resultat="quiz-resultat.html"/>
+		<module id="erreur" erreur="erreur.html" />
+	</template>
+	<styles>
+		<style id="css-defaut" description="un design bateau">
+			<css rel="stylesheet" media="all" type="text/css" href="couleur.css"/> 
+			<css rel="stylesheet" media="all" type="text/css" href="structure.css"/> 
+			<css rel="stylesheet" media="all" type="text/css" href="style.css"/> 
+		</style>
+		<style id="css-cafe" description="un design bateau"/>
+	</styles>
+	<images id="images">
+</design>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Ré-écriture d'url en pratique</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Ré-écriture d'url en pratique</h1>
+	
+	<h2>Format des urls</h2>
+	<p>Les urls de ce site sont construits de la façon suivante&nbsp;: 
+	</p>
+	<ol>
+		<li>une abbreviation de la langue de la page (par exemple "fr" pour "français, 
+	"de" pour allemand)</li>
+		<li>une virgule</li>
+		<li>le nom du module (par exemple "page" ou "article")</li>
+		<li>une virgule</li>
+		<li>des paramètres (comme le nom de la page ou de la collection d'article séparés par des virgules)</li>
+		<li>".html"</li>
+	</ol>
+	<p>Comme on le voit, les différentes parties de l'url sont séparées par des virgules tandis que les mots des paramètres sont séparés par des virgules, exemple&nbsp;:</p>
+	
+	<p><code>www.mon-site.com/fr,page,bienvenue-sur-mon-site.html</code></p>
+	<p><code>www.mon-site.com/fr,article,editorial,comment-construire-un-site-internet.html</code></p>
+	<img class="center" src="images/url_page.png"/>
+
+	<h2>Redirection</h2>
+	<p>La page <code>www.mon-site.com/fr,page,bienvenue-sur-mon-site.html</code> n'existe pas sur le serveur&nbsp;: il n'y a pas de fichier
+	s'appellant ainsi.</p>
+	
+	<p>Quand le navigateur demande au serveur la page <code>www.mon-site.com/fr,page,bienvenue-sur-mon-site.html</code>, le serveur redirige 
+	la requête vers la page <code>www.mon-site.com/index.php</code>. Le fichier <code>index.php</code> va extraire les données de l'url&nbsp;:
+	l'abbreviation de la langue, le module ainsi que le(s) paramètre(s). Vu qu'une page <code>.html</code> est demandée, le fichier <code>index.php</code>
+	va transmettre les paramètres et la langue au module demandé (dans ce cas au module "page").</p>
+	
+	<p>De manière simplifiée&nbsp;: le module "page" (<code>page.php</code>) va&nbsp;:</p>
+	<ol>
+		<li>chercher le fichier <code>data/page/bienvenue-sur-mon-site.xml</code> et en extraire les métadonnées (le titre, l'auteur, la description),
+		les droits de la page, le design lié à la page (nom du thème et du style), le contenu principal et le contenu secondaire&nbsp;;</li>
+		<li>si des <a href="plugins.html">plugins</a> sont inclus dans le contenu principal ou secondaire, les activer&nbsp;;</li>
+		<li>comparer les droits d'accès de la page avec les droits de l'utilisateur&nbsp;;</li>
+		<li>chercher le fichier <code>data/arborescence.xml</code> et en extraire le menu&nbsp;;</li>
+		<li>chercher les gabarits (fichiers de designs <code>.html</code>)&nbsp;;</li>
+		<li>intégrer toutes les informations extraites (menu, contenus etc.) dans les gabarits et afficher le tout.</li>
+	<p>Ces actions sont les actions élémentaires que chaque module possède ! Le module "page" est donc le module de base. Les autres
+	modules sont basés sur ce modules et comportent des actions supplémentaires</p>
+	<img class="center" src="images/redirection_page.png"/>
+	<p></p>
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

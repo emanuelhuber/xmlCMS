@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="691.07141"
+   height="355.77548"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="navigateur-to-serveur-php.svg"
+   inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur.png"
+   inkscape:export-xdpi="76"
+   inkscape:export-ydpi="76">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3805"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3808"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3808-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="210.73402"
+     inkscape:cy="167.11745"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="20"
+     fit-margin-left="20"
+     fit-margin-right="20"
+     fit-margin-bottom="20"
+     inkscape:window-width="1680"
+     inkscape:window-height="967"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-46.642906,-23.583164)">
+    <image
+       y="81.694084"
+       x="146.6429"
+       id="image2993"
+       xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/serveur.jpg"
+       height="179.90765"
+       width="116.71429"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <image
+       y="63.937145"
+       x="429.42862"
+       id="image3004"
+       xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/navigateur.png"
+       height="295.42151"
+       width="288.28571"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="180.71429"
+       y="65.933609"
+       id="text3007"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         id="tspan3009"
+         x="180.71429"
+         y="65.933609">Serveur</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="535.20648"
+       y="55.231602"
+       id="text3007-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         id="tspan3009-7"
+         x="535.20648"
+         y="55.231602">Navigateur</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.82198489px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 386.42857,142.36219 c 0,0 -39.88371,-22.28656 -56.4658,-22.85715 -28.81885,-0.99166 -58.87887,16.42857 -58.87887,16.42857"
+       id="path3032"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.81457645px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 275.24421,189.71741 c 0,0 37.58713,23.22389 53.21441,23.81848 27.15941,1.03337 55.48852,-17.11953 55.48852,-17.11953"
+       id="path3032-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="330.87781"
+       y="105.94589"
+       id="text3007-1-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         x="330.87781"
+         y="105.94589"
+         id="tspan4291">url</tspan></text>
+    <image
+       y="255.89867"
+       x="312.50003"
+       id="image5202"
+       xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/CSS.png"
+       height="88.348511"
+       width="116.85714"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <image
+       y="263.86737"
+       x="284.64285"
+       id="image4301"
+       xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/HTML.png"
+       height="86.989609"
+       width="76.428566"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="342.68582"
+       y="229.26228"
+       id="text3007-1-4-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         x="344.90457"
+         y="229.26228"
+         id="tspan4291-4">Tiens, la voici avec </tspan><tspan
+         sodipodi:role="line"
+         x="342.68582"
+         y="249.26228"
+         id="tspan5205">sa feuille de style</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="59.76965"
+       y="120.07294"
+       id="text5209"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         id="tspan5211"
+         x="59.76965"
+         y="120.07294">XML</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="58.785763"
+       y="150.78722"
+       id="text5213"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         id="tspan5215"
+         x="58.785763"
+         y="150.78722">HTML</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="59.179317"
+       y="177.93008"
+       id="text5217"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76"><tspan
+         sodipodi:role="line"
+         id="tspan5219"
+         x="59.179317"
+         y="177.93008">CSS</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-4)"
+       d="m 98.571429,100.0612 c 0,0 -15,-10.714289 -21.428572,-12.142861 C 70.714286,86.489768 50,92.204054 50,92.204054"
+       id="path5221"
+       inkscape:connector-curvature="0"
+       transform="translate(46.642906,23.583164)"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend-4)"
+       d="m 53.571429,102.91834 c 23.46629,0.51249 33.386513,-1.24508 46.428571,13.57143 2.76491,7.01267 5.76564,15.0907 -1.428571,20.71428 -11.291462,2.58695 -14.104041,3.46133 -27.142857,0.71429 l -19.285715,-10"
+       id="path5223"
+       inkscape:connector-curvature="0"
+       transform="translate(46.642906,23.583164)"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-4)"
+       d="m 47.857143,145.77549 c 23.114617,16.09825 34.435814,7.64771 56.428567,8.57143"
+       id="path5225"
+       inkscape:connector-curvature="0"
+       transform="translate(46.642906,23.583164)"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+    <image
+       y="39.791355"
+       x="71.089684"
+       id="image7055"
+       xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/php.png"
+       height="54.848866"
+       width="85.392159"
+       inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\navigateur-to-serveur-php.png"
+       inkscape:export-xdpi="76"
+       inkscape:export-ydpi="76" />
+  </g>
+</svg>

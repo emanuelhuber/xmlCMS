@@ -1,0 +1,16 @@
+
+RewriteEngine on
+# Options +FollowSymlinks
+RewriteRule ^(.+)\.html$ \index.php	[NC,L]
+RewriteRule ^(.+)\.csszip$ \index.php	[NC,L]
+RewriteRule ^(.+)\.jszip$ \index.php	[NC,L]
+
+RewriteBase /admin
+
+# en local!
+#ErrorDocument 404 /www/interstitium/admin/index.php
+
+# en ligne
+#ErrorDocument 404 /indexfree.php
+
+

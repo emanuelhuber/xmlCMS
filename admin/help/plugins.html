@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help : Plugins</title>
+	
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="css/shThemeDefault.css" type="text/css" />
+	
+ <!--  
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+  <script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#example").treeview();
+  });
+  </script> -->
+  
+</head>
+<body>
+	<div id="global">
+	<div id="contenu">
+	<h1>Les plugins</h1>
+	
+	<p>Comme nous l'avons vu, les modules existant le design du site (sa structure) est statique. Le contenu
+	du site est sauvegardé dans des fichiers <code>.xml</code>. Ce contenu est aussi statique&nbsp;: il
+	ne change pas au cours du temps, à moins que l'utilisateur modifie le contenu.</p>
+	<p>Pour ajouter un peu de dynamisme au site, des plugins peuvent être intégrés au contenu. Exemples de plugins&nbsp;:
+	une carte google map, une citation qui change chaque jour, des images défilent, un encart qui peut apparaître sur
+	plusieurs pages.</p>
+	
+	<p>Pour ajouter un plugin a un contenu il suffit d'ajouter le code suivant au contenu&nbsp;:</p>
+	<p><code><pre class="brush: plain">%%% PLUGIN nom_du_plugin:parametre %%%</pre></code></p>
+	<p>Et si il y a plusieurs paramètres&nbsp;:</p>
+	<p><code><pre class="brush: plain">%%% PLUGIN nom_du_plugin:parametre-1;parametre-2;parametre-3 %%%</pre></code></p>
+	
+	<p>Le serveur remplacera ce code par une carte google map, une citation (etc.) et si il le faut
+	il ajoutera des liens vers des fichiers javaScript nécessaire au fonctionnent du plugin (comme
+	pour google map par exemple).</p>
+	<p>Ci-dessous, quelques exemples concrets : le code suivit du résultat. A noter que pour le 
+	plugin "citation aléatoire", il y a deux paramètres : le premier correspond à la source des citations (Bible,
+	Baden Powel, Victor Hugo), le second à soit la citation (paramètre-2 = 1) soit la référence (paramètre-2 = 2).</p>
+	
+	<p><img class="center" alt="page internet simple" src="images/plugins2.png"/></p>
+
+	
+	</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushPlain.js"></script>
+	<script type="text/javascript" src="js/shBrushAutoloader.js"></script>
+	<script type="text/javascript">
+	<!--
+     SyntaxHighlighter.all()
+	 -->
+	</script>
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+ 
+
+</html>

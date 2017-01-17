@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Inclure un encart]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="plugin-inclureencart.html" edit="plugin-inclureencart-edit.html" delete="plugin-inclureencart-delete.html"/>
+  <contenu>
+    <principal><![CDATA[      
+		
+			<p>Lorem ipsum dolor sit amet, consectetuerTooltip0: fond jaune bordures fines grises adipiscing elit. 
+			Maecenas aliquet, lacus in molestie tempus, urna mi adipiscingTooltip1: fond bleu bordures épaisses blanches leo, 
+			vitae congue urna sem nec mauris.</p>]]>
+	</principal>
+    <secondaire><![CDATA[					 
+		Ce plugin affiche un encart, par exemple dans la colonne de droite. L'intérêt de ce plugin est que vous pouvez
+		afficher sur plusieurs page le même contenu sans avoir à l'écrire plusieurs fois.		]]></secondaire>
+  </contenu>
+</page>

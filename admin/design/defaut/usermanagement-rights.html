@@ -1,0 +1,57 @@
+<div id="secondaire">
+	<h1>Explication</h1>
+	<img src="design/defaut/images/idea.png" width="50px"/>
+	<p>
+	Un <strong>utilisateur</strong> appartient à un <strong>groupe</strong> qui possède plusieurs <strong>droits</strong>.
+	</p>
+	<p>
+	Chaque page possède un certain droit d'accès. Si le groupe de l'utilisateur possède aussi ce droit, alors l'utilisateur aura accès à la page.
+	</p>
+	
+	
+	
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+	<!-- END info -->
+	
+	<h1>Activer et éditer des droits</h1>
+	
+	<!-- Editer les infos -->
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+
+			<fieldset class="metadonnees">
+				<legend>Droits</legend>
+			<!-- BEGIN list -->
+				<p>
+					<label> Droit n°{list.RGHT_NB} :
+					<input type="checkbox" name="activated[{list.RGHT_NB}]" 
+						<!-- IF list.ACTIVATED -->
+							checked="checked"
+							<!-- ENDIF -->
+							> 
+					</label>
+					<label>Nom :<input type="text" name="name[{list.RGHT_NB}]" value="{list.RGHT_NAME}" size="18" maxlength="50"/></label><br/>
+					<label>Description :<input type="text" name="description[{list.RGHT_NB}]" value="{list.RGHT_DESCRIPTION}" size="40" maxlength="50"/></label>
+				</p>
+			<!-- END list -->
+			</fieldset>
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	
+		
+	
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

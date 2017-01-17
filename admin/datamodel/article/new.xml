@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[New Article]]></titre>
+    <auteur><![CDATA[Author]]></auteur>
+    <date><![CDATA[22.09.2009]]></date>
+    <description><![CDATA[Description of the article]]></description>
+    <motsclefs><![CDATA[keyword]]></motsclefs>
+    <droit><![CDATA[-1]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <publication><![CDATA[0]]></publication>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+  </info>
+  <design nom="defaut" style="css-defaut" squelette="squelette.html" article="articles.html" index="articles.html">
+     <css rel="stylesheet" media="all" type="text/css" href="style.css"/>
+  </design>
+  <contenu>
+    <chapeau><![CDATA[ <p> Chapeau de l'article.</p>]]></chapeau>
+    <principal><![CDATA[<p>Contenu principal</p>]]></principal>
+    <secondaire><![CDATA[<p>Contenu secondaire</p>]]></secondaire>
+  </contenu>
+</page>

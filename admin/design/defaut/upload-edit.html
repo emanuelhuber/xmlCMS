@@ -1,0 +1,53 @@
+<script type="text/javascript">
+<!--
+
+$(function() {
+	$('#datepicker').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat: 'dd.mm.yy'
+	});
+});
+-->
+
+</script>
+<div id="secondaire">
+
+	{CONTENU_SECONDAIRE}
+
+</div><!-- #secondaire -->
+
+<div id="principal">
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+		<!-- END info -->
+	<div id="wrapper">
+		<h1>Edition de document</h1>
+		
+	
+		<!-- Editer les infos -->
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}#tab1">
+			
+			<fieldset class="metadonnees">
+				<legend>Méta-données</legend>
+			
+				<p>	<label>Titre <input type="text" name="info[title]" value="{FORM_TITLE}" size="50" maxlength="150"/></label></p>
+				<p>	<label>Auteur <input type="text" name="info[copyright]" value="{FORM_COPYRIGHT}" size="50" maxlength="50"/></label></p>
+				<p>	<label>Description <input type="text" name="info[description]" value="{FORM_DESCRIPTION}" size="50" /></label></p>
+				
+			</fieldset>
+				
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a>
+		</form>
+	</div><!-- #wrapper -->
+	
+	
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

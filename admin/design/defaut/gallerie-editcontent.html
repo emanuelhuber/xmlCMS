@@ -1,0 +1,110 @@
+
+<div id="secondaire">
+	<h1>Aide</h1>
+	<p>Veuillez charger les images dans le dossier:<br/> <code>{DIR_IMAGES}</code> <br/> ainsi les miniatures dans le dossier:<br/> <code>{DIR_MINIATURES}</code>.</p>
+	<p>Les images et les miniatures ont exactement le même nom de fichier.</p>
+	<p>Taille recommandée pour les miniatures: 150 x 80 px.</p>
+	<p>Taille recommandée pour les images: 800 x 600 px.</p>
+	<hr/>
+	
+</div><!-- #secondaire -->
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+	
+	
+<div id="principal">
+	<div id="wrapper">
+	
+		<h1>
+		<!-- IF HAS_RIGHT -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> 
+		Edition de l'articles «&nbsp;{FORM_TITRE}&nbsp;»
+		<!-- IF IS_ONLINE -->
+			<sup><code>EN LIGNE</code></sup>
+			<!-- <img src="design/defaut/images/published-small.png" alt="La page est publiée (online)" title="La page est publiée (online)"/> -->
+		<!-- ELSE -->
+			<sup><code class="attention">HORS LIGNE</code></sup>
+		 <!-- <img src="design/defaut/images/unpublished-small.png" alt="La page n'est pas publiée (offline)" title="La page n'est pas publiée (offline)"/> -->
+		<!-- ENDIF --> </h1>
+		<p class="attention">
+		<!-- ID=<code>[{FORM_ID}] -- </code> 
+		Description : «&nbsp;<em>{FORM_DESCRIPTION}</em>&nbsp;»
+		<br/> -->
+		<!-- IF IS_ONLINE -->
+			 Retirer la page &nbsp;<span><a href="{LINK_PUBLISH}" title="Retirer l'article"><img src="design/defaut/images/offline.png" alt="Retirer l'article"/></a></span>
+		<!-- ELSE -->
+		 Mettre la page en ligne &nbsp;<span><a href="{LINK_PUBLISH}" title="Publier l'article"><img src="design/defaut/images/online.png" alt="Publier l'article"/></a></span>
+		<!-- ENDIF -->
+		</p>
+	
+		
+		<ul class="tabs">
+			<!-- <li><a href="{LINK_INDEX}">Index</a></li>
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li> -->
+			<li class="selected"><a href="{LINK_EDITCONTENT_ARTICLE}">Editer Images</a></li>
+			<li><a href="{LINK_EDITCHAPEAU}">Editer Chapeau</a></li>
+			<li><a href="{LINK_EDITINFO_ARTICLE}">Editer info article</a></li>
+		</ul>
+		<!-- IF IS_IMAGES -->
+		<!-- ELSE -->
+			<p>&nbsp;</p>
+			<p>Il n'y pas encore d'images.</p>
+			<p>Veuillez charger les images dans le dossier:<br/> <code>{DIR_IMAGES}</code> <br/> ainsi les miniatures dans le dossier:<br/> <code>{DIR_MINIATURES}</code>.</p>
+			<p> Veuillez faire attention à ce que les noms de fichiers des photos et des miniatures soient exactement les mêmes, y compris l'extension. Attention aux majuscules/minuscules ! <br/>
+			<code>maphoto.<strong>JPG</strong></code> n'est pas identique à <code>maphoto.<strong>jpg</strong></code> </p>
+		<!-- ENDIF -->
+		
+		<!-- BEGIN images -->
+		<div class="imgform">		
+			<div class="img"><a class="fancy" href="{images.SRC}" title="{images.TITLE}">
+			<img src="{images.SRC_MINIATURE}" alt="{images.ALT}"/>
+			</a>
+			</div>
+			<div class="myform">
+			<form  name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+				<fieldset class="metadonnees">
+					<legend>Méta-données</legend>
+					<input type="hidden"  name="image[id]"  value="{images.ID}">
+					<p>	<label>Titre <input type="text" name="image[title]" value="{images.TITLE}" size="50" maxlength="150"/></label></p>
+					<!-- <p>	<label>Auteur <input type="text" name="image[copyright]" value="{images.TITLE}" size="50" maxlength="50"/></label></p> -->
+					<p>	<label>Description <input type="text" name="image[description]" value="{images.DESCRIPTION}" size="50" /></label></p>
+					<p>	<label>Text alternatif <input type="text" name="image[alt]" value="{images.ALT}" size="50" /></label></p>
+				</fieldset>
+				<!-- <input type="reset" name="nom" value="" class="refresh" /> -->
+				<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="" />
+				<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+			</form>
+			</div>
+			<!-- Editer les infos -->
+		</div>
+		<!-- END images -->
+		
+	</div><!-- #wrapper -->
+
+</div><!-- #principal --> 
+
+<!-- Add fancyBox main JS and CSS files -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="design/defaut/js/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="design/defaut/js/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+		<!--	
+$(document).ready(function() {
+	$(".fancy").fancybox({
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: true,
+		helpers		: {
+			title	: { type : 'over' },
+			buttons	: {}
+		}
+	});
+});
+		-->
+		</script>

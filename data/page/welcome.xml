@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Welcome!]]></titre>
+    <auteur><![CDATA[admin]]></auteur>
+    <date><![CDATA[17.01.2017]]></date>
+    <description><![CDATA[description]]></description>
+    <motsclefs><![CDATA[key words]]></motsclefs>
+    <droit><![CDATA[-1]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design squelette="squelette.html" page="page.html" theme="defaut" style="style1"/>
+  <contenu>
+    <principal><![CDATA[ <h1>Welcome!</h1><p>This is my first page!</p>]]></principal>
+    <secondaire><![CDATA[<h1>Titre du contenu secondaire</h1>
+					<p> Petit paragraphe... </p> ]]></secondaire>
+  </contenu>
+</page>

@@ -1,0 +1,45 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+<div id="principal">	
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+	<div id="wrapper">
+		<h1>Edition de la page "multi" «&nbsp;{FORM_TITRE}&nbsp;»</h1>
+		
+		<ul class="tabs">
+			<li><a href="{LINK_EDITCONTENT}">Index</a></li>
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li>
+			<li class="selected"><a href="#">Supprimer un bloc</a></li>
+		</ul>
+	
+		
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Supprimer le bloc n°{BLOC_ID}</legend>
+				<p> Voulez-vous vraiment supprimer ce bloc ???<br/>
+					<strong>ID</strong> : <code>[{BLOC_ID}]</code>  <br/>
+					<strong>Titre</strong> : {BLOC_TITRE} <br/>
+				</p>
+				{BLOC_CONTENU}
+				<p><label><input type="radio" name="ok" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" checked="checked"/>Non</label><br/></p>
+
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div>
+	
+	{CONTENU}
+</div><!-- #principal --> 

@@ -1,0 +1,1 @@
+a:2:{s:3:"day";a:7:{i:1;s:5:"lundi";i:2;s:5:"mardi";i:3;s:8:"mercredi";i:4;s:5:"jeudi";i:5;s:8:"vendredi";i:6;s:6:"samedi";i:0;s:8:"dimanche";}s:5:"month";a:12:{i:1;s:7:"janvier";i:2;s:8:"février";i:3;s:4:"mars";i:4;s:5:"avril";i:5;s:3:"mai";i:6;s:4:"juin";i:7;s:7:"juillet";i:8;s:5:"août";i:9;s:9:"septembre";i:10;s:7:"octobre";i:11;s:8:"novembre";i:12;s:9:"décembre";}}

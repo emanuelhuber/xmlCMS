@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Créer un contenu]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="menu-langue.html"/>
+  <contenu>
+    <principal><![CDATA[   	]]>
+	</principal>
+    <secondaire><![CDATA[					 
+				<h1>Quelques exemples</h1>
+				<p>
+				Français - fr<br/>
+				Deutsch - de<br/>
+				English - en<br/>
+				</p>]]></secondaire>
+  </contenu>
+</page>

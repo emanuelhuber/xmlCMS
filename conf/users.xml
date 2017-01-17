@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<modules>
+		<mod id="page" nom="Page" actif="1" type="0" description="Affiche simplement les données dans un encart principal et un secondaire">
+		<mod id="quiz" nom="Quiz" actif="1" type="1" description="Affiche des quiz selon le thème choisi ainsi que les quiz individuellement">
+		<mod id="article" nom="Article" actif="1" type="1" description="Affiche des articles selon le thème choisi ainsi que les articles individuellement">
+		<mod id="gallerie" nom="Gallerie" actif="1" type="1" description="Affiche des galleries d'images selon le thème choisi ainsi que les galleries d'images individuellement">
+	</modules>
+	<plugins>
+	</plugins>
+	<user number="001" login="admin" type="administrateur" actif="oui" email="admin.admin@admin.admin" droits="31" logout="0">admin</user>
+</document>

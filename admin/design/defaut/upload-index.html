@@ -1,0 +1,35 @@
+
+
+
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	
+<h2>Upload de fichier</h2>
+
+
+<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+	
+	<fieldset class="rubrique">
+		<legend>Upload</legend>
+	
+		<p>	<label>Type de document <select name="rubrique[menu]" size="1">
+								<option value="image"  selected="selected">Images</option>
+								<option value="video">Vidéo</option>
+								<option value="document">Documents (PDF)</option>
+								<option value="1"  {SELECTED_1}>Oui</option>
+							</select>
+			</label>
+		</p>
+		<p>	<label>Nom dans le menu <input type="text" name="rubrique[nom]" value="{NOM}" size="50" maxlength="150"/></label></p>
+		<p>	<label>Pages soeurs</label>
+		</p>
+	</fieldset>
+	<input type="reset" name="nom" value="" class="refresh" />
+	<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" />
+</form>
+	
+	{CONTENU}
+</div><!-- #principal --> 

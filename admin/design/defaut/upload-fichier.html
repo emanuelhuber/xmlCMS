@@ -1,0 +1,75 @@
+<script>
+function create_champ(i) {
+	var i2 = i + 1;
+	document.getElementById('leschamps_'+i).innerHTML = '<label for="file['+i+']">Fichier :</label><br/>'
+														+ '<input type="file" name="file['+i+']" id="file['+i+']"/><br/>'
+														+ '<label>Nom du fichier SANS EXTENSION, optionel. Charactères autorisés: [a-z]+[0-9]; mots séparés par des tirets "-"<br/> '
+														+ '<input type="text" name="fileId['+i+']" value="" size="50" maxlength="150"/></label><br/>'
+														+ '<label for="title['+i+']">Titre du fichier (max 50 caractères):</label><br />'
+														+ '<input type="text" name="title['+i+']" value="Titre du fichier" id="title['+i+']" /><br />'
+														+ '<label for="copyright['+i+']">Copyright ou source du fichier (max 50 caractères):</label><br />'
+														+ '<input type="text" name="copyright['+i+']" value="Copyright du fichier" id="copyright['+i+']" /><br />'
+														+ '<label for="description['+i+']">Description de votre fichier (max 255 caractères):</label><br />'
+														+ '<textarea name="description['+i+']" id="description['+i+']"></textarea><br />';
+	document.getElementById('leschamps_'+i).innerHTML += (i <= 10) ? '<span id="leschamps_'+i2+'"><a href="javascript:create_champ('+i2+')">Ajouter un champ</a></span>' : '';
+}
+</script>
+
+
+<div id="secondaire">
+	<h1>Extensions autorisés</h1>
+		
+		<!-- BEGIN liste -->
+		<h2>{liste.NAME}</h2>
+		<table>
+			<tr><th>Extension</th><th>Type</th></tr>
+			<!-- BEGIN categorie -->
+			<tr><td>{liste.categorie.EXT}</td><td>{liste.categorie.TYPE}</td></tr>
+			<!-- END categorie -->
+		</table>
+		<!-- END liste -->
+		
+		
+		
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	
+<h1>Upload de fichier</h1>
+
+<p><em>Le(s) fichier(s) ne doivent pas dépasser {TAILLE_MAX_KO} ko !</em></p>
+
+<!-- Attention, ne de ne pas oublier le enctype="multipart/form-data" -->
+	<form method="POST" action="{FICHIER_CIBLE}" enctype="multipart/form-data">
+		<!-- Limiter la taille des fichiers à 500Ko -->
+		<input type="hidden" name="MAX_FILE_SIZE" value="{TAILLE_MAX}" />
+		<fieldset>
+			<legend>Envoi de fichiers</legend>
+			<p class="avertissement">{ERREUR}</p>
+			<p class="message">{MESSAGE}</p>
+			<!-- champs d'envoi de ficher, de type file -->
+			<label for="file[1]">Fichier :</label><br/>
+				<input type="file" name="file[1]" id="file[1]"/><br/>
+			<label>Nom du fichier SANS EXTENSION, optionel. Charactères autorisés: [a-z]+[0-9]; mots séparés par des tirets "-"<br/> 
+				<input type="text" name="fileId[1]" value="" size="50" maxlength="150"/></label><br/>
+			<label for="title[1]">Titre du fichier (max 50 caractères):</label><br />
+				<input type="text" name="title[1]" value="Titre du fichier" id="title[1]" /><br />
+			<label for="copyright[1]">Copyright ou source (max 50 caractères):</label><br />
+				<input type="text" name="copyright[1]" value="Copyright du fichier" id="copyright[1]" /><br />
+			<label for="description[1]">Description de votre fichier (max 255 caractères):</label><br />
+				<textarea name="description[1]" id="description[1]"></textarea><br />
+
+			<span id="leschamps_2">
+			<a href="javascript:create_champ(2)">
+				Ajouter un fichier
+			</a>
+			</span>
+				<!-- bouton d'envoi -->
+				<p><input type="submit" name="envoi" value="Envoyer les fichiers" /></p>
+			</legend>
+		</fieldset>
+	</form>
+	
+	{CONTENU}
+</div><!-- #principal --> 

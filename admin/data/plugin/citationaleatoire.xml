@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Citation aléatoire]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="plugin-citationaleatoire.html" edit="plugin-citationaleatoire-edit.html" delete="plugin-citationaleatoire-delete.html"/>
+  <contenu>
+    <principal><![CDATA[  ]]>
+	</principal>
+    <secondaire><![CDATA[					 
+	<p>Utilisation</p>	
+<p>La citation :<pre><code>    %%% PLUGIN citationAleatoire:verset;1 %%% </code></pre>
+<p>La référence :<pre><code>    %%% PLUGIN citationAleatoire:verset;2 %%%</code></pre></p>	]]></secondaire>
+  </contenu>
+</page>

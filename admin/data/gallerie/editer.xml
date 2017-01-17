@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Editer un des articles]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+	<date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" index="gallerie-editer.html" 
+			editindexinfo="gallerie-index-editinfo.html" editmenu="gallerie-index-editmenu.html" 
+			indexpublish="gallerie-index-publish.html"
+			editcontentarticle="gallerie-editcontent.html" editcontentchapeau="gallerie-editchapeau.html" editinfoarticle="gallerie-editinfo.html" 
+			delete="gallerie-supprimer.html" confirmation="gallerie-confsup.html"
+			editdesign="gallerie-editdesign.html" editdesign2="gallerie-editdesign2.html"
+			publisharticle="gallerie-publish.html"/>
+  <contenu>
+    <principal><![CDATA[ ]]>
+	</principal>
+    <secondaire><![CDATA[]]></secondaire>
+  </contenu>
+</page>

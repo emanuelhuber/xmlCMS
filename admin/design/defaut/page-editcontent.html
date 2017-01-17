@@ -1,0 +1,63 @@
+
+<!-- IF IS_SAVECONFIRMATION -->
+	<div id="info">
+		<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+	</div>
+<!-- ENDIF --> 
+
+<div id="principal_large">	
+	<div id="wrapper">
+		<h1>
+		<!-- IF HAS_RIGHT -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> 
+		Edition de la page «&nbsp;{FORM_TITRE}&nbsp;»
+		<!-- IF IS_ONLINE -->
+			<sup><code>EN LIGNE</code></sup>
+			<!-- <img src="design/defaut/images/published-small.png" alt="La page est publiée (online)" title="La page est publiée (online)"/> -->
+		<!-- ELSE -->
+			<sup><code class="attention">HORS LIGNE</code></sup>
+		 <!-- <img src="design/defaut/images/unpublished-small.png" alt="La page n'est pas publiée (offline)" title="La page n'est pas publiée (offline)"/> -->
+		<!-- ENDIF --> </h1>
+		<p class="attention">
+		<!-- ID=<code>[{FORM_ID}] -- </code> 
+		Description : «&nbsp;<em>{FORM_DESCRIPTION}</em>&nbsp;»
+		<br/> -->
+		<!-- IF IS_ONLINE -->
+			 Retirer la page &nbsp;<span><a href="{LINK_PUBLISH}" title="Retirer l'article"><img src="design/defaut/images/offline.png" alt="Retirer l'article"/></a></span>
+		<!-- ELSE -->
+		 Mettre la page en ligne &nbsp;<span><a href="{LINK_PUBLISH}" title="Publier l'article"><img src="design/defaut/images/online.png" alt="Publier l'article"/></a></span>
+		<!-- ENDIF -->
+		</p>
+	   <ul class="tabs">
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li class="selected"><a href="{LINK_EDITCONTENT}">Editer le contenu</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li>
+			<li><a href="{LINK_EDITTEMPLATE}">Editer le template</a></li>
+		</ul>
+		
+		<form class="edit" name="editContent" method="POST" action="{FICHIER_CIBLE}#tab2">	
+			<fieldset class="contenu">
+				<legend>Contenu</legend>
+				
+				<p>
+					<label> Contenu Principal<br/>
+					<textarea name="contenu[principal]" cols="80" rows="100" class="wymeditor"> {PRINCIPAL}</textarea>
+					</label>
+				</p>
+				<p>
+					<label> Contenu Secondaire<br/>
+					<textarea name="contenu[secondaire]" cols="50" rows="6" class="wymeditor">{SECONDAIRE} </textarea>
+					</label>
+				</p>
+			</fieldset>
+				
+				
+			<!-- <input type="reset" name="nom" value="" class="refresh" /> -->
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div><!-- #wrapper -->
+
+</div><!-- #principal --> 

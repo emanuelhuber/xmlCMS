@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[dictionnaire]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="dictionnaire-index.html"/>
+  <contenu>
+    <principal><![CDATA[ ]]>
+	</principal>
+    <secondaire><![CDATA[		
+				<h1>Remarques</h1>
+				<ul>
+				<li>Pour qu'une rubrique ou un chapitre soit visible sur le site, il/elle doit contenir des pages.</li>
+				<li>Si vous créez une arborescence avec un/des chapitres, une page ne pourra être visible depuis le site
+					que si elle se trouve dans un chaptire.</li>
+				<li></li>
+				</ul>]]></secondaire>
+  </contenu>
+</page>

@@ -1,0 +1,23 @@
+<!-- IF IS_SAVECONFIRMATION -->
+	<div id="info">
+		<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+	</div>
+<!-- ENDIF --> 
+
+<div id="principal">
+	<div id="wrapper">
+		<h1>Edition du nom du chapitre "{FORM_TITRE}"</h1>
+		<p>(id = <code>{FORM_ID}</code>)</p>
+
+		<form class="edit" name="editMenu" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="rubrique">
+				<legend>Chapitre</legend>
+				<p>	<label>Nom dans le menu <br/><input type="text" name="rubrique[nom]" value="{NOM}" size="50" maxlength="150"/></label></p>
+			</fieldset>
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" />
+		</form>
+	</div><!-- #wrapper -->
+
+</div><!-- #principal --> 

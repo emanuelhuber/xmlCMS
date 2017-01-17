@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   width="670.59302"
+   height="225.46869"
+   sodipodi:docname="cache_html_serveur.svg"
+   inkscape:export-filename="C:\Dokumente und Einstellungen\emanuel\Eigene Dateien\Emanuel\projet\site_web\interstitium\images\cache_html_serveur.png"
+   inkscape:export-xdpi="93"
+   inkscape:export-ydpi="93">
+  <metadata
+     id="metadata2991">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2989">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3779"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3782"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="967"
+     id="namedview2987"
+     showgrid="false"
+     fit-margin-left="10"
+     fit-margin-top="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="1.2463768"
+     inkscape:cx="288.34178"
+     inkscape:cy="88.645775"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2985" />
+  <image
+     width="193.11629"
+     height="197.89639"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/navigateur.png"
+     id="image2993"
+     x="467.47675"
+     y="17.572304" />
+  <image
+     y="41.304062"
+     x="170.79266"
+     id="image3003"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/serveur.jpg"
+     height="161.66542"
+     width="104.87972" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+     d="m 459.11625,90.043757 c -40.5545,-19.72043 -134.32344,-20.9381 -178.11627,2.40697"
+     id="path3006"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <text
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:KARINE;-inkscape-font-specification:KARINE"
+     x="295.44183"
+     y="60.357697"
+     id="text4220"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4222"
+       x="295.44183"
+       y="60.357697"
+       dx="-0.050000001">bienvenue.html (?)</tspan></text>
+  <image
+     y="33.264687"
+     x="10"
+     id="image4854"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/application-xml.png"
+     height="62.209301"
+     width="62.209301" />
+  <image
+     y="40.485611"
+     x="17.220917"
+     id="image4854-1"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/application-xml.png"
+     height="62.209301"
+     width="62.209301" />
+  <image
+     y="46.904221"
+     x="26.046509"
+     id="image4854-7"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/application-xml.png"
+     height="62.209301"
+     width="62.209301" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+     d="M 165.46509,82.020497 C 142.63807,63.497987 114.26188,67.008627 94.860444,75.601887"
+     id="path4882"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+     d="m 93.255794,88.439097 c 20.220436,19.538063 43.728606,17.705863 68.197666,9.62791"
+     id="path4884"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+     d="m 280.99998,141.39259 c 56.06462,25.66752 113.49746,25.33889 171.69767,10.43023"
+     id="path4886"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <image
+     y="123.35336"
+     x="348.92307"
+     id="image6176"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/html2.png"
+     height="64.962212"
+     width="50.293324" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+     d="m 279.39533,153.42747 c 51.61624,13.37208 25.67445,51.88373 -12.83721,38.51163"
+     id="path6179"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <image
+     y="160.26031"
+     x="222.56975"
+     id="image6176-4"
+     xlink:href="file:///C:/Dokumente%20und%20Einstellungen/emanuel/Eigene%20Dateien/Emanuel/projet/site_web/interstitium/images/html2.png"
+     height="47.31105"
+     width="36.627907" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="219.2209"
+     y="184.71817"
+     id="text6383"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6385"
+       x="219.2209"
+       y="184.71817">copie</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-1.20000005px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:KARINE;-inkscape-font-specification:KARINE"
+     x="9.0115967"
+     y="26.660034"
+     id="text6387"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6389"
+       x="9.0115967"
+       y="26.660034">données</tspan></text>
+</svg>

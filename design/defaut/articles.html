@@ -1,0 +1,57 @@
+<div id="secondaire">	
+	<!-- <div class="box">
+	</div> -->
+	<p class="centre"><a href="{LIEN_TOUS_LES_ARTICLES}">Retour</a></p>
+	
+	<div class="box">
+		<h1>Les derniers articles</h1>
+		<ul class="titresArticles">
+		<!-- BEGIN article -->
+			<li> <a href="{article.LIEN}"  title="article">{article.TITRE}</a> </li>
+		<!-- END article -->
+		</ul>
+	</div>
+	
+		{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<div id="chemin2fer">
+		<img src="design/ichthus/images/camp.png" alt="{L_VOUS_ETES_ICI}"/> 
+		<!-- BEGIN crumbs -->	
+			<!-- IF crumbs.IS_LINK -->
+			<a href="{crumbs.LINK}" title="{crumbs.TITLE}">{crumbs.NAME}</a>
+			<!-- ELSE -->
+				{crumbs.NAME}
+			<!-- ENDIF -->
+				<img src="design/ichthus/images/fleche_droite_rouge.gifc" alt="fleche rouge"/>
+		<!-- END crumbs -->
+		{CURRENT_CRUMB}
+	</div>
+
+	<div id="navigation">
+		<!-- IF IS_PREVIOUS -->
+				<a class="previous" href="{PREVIOUS_LINK}" title="{PREVIOUS_TITLE}">{PREVIOUS_TITLE}</a>
+		<!-- ENDIF -->
+		<!-- IF IS_NEXT -->
+				<a class="next" href="{NEXT_LINK}" title="{NEXT_TITLE}">{NEXT_TITLE}</a>
+		<!-- ENDIF -->
+	</div>
+	
+	<h2> {INFO_TITRE} <!--(in <em>{INFO_COLLECTION_TITRE}</em>)--></h2>
+	<!-- <div class="dateArticle">
+		<div class="mois">{INFO_NOM_MOIS_AB}</div>
+		<div class="jour">{INFO_JOUR}</div>
+	</div>
+	<p class="article">{INFO_AUTEUR} ({INFO_ANNEE})</p>
+	<hr/> -->
+	<!-- <p class="article_keywords">Mots-clefs :  -->
+		<!-- BEGIN tags -->
+			<!-- <a href="{tags.LINK}" title="tag">{tags.NAME}</a> &nbsp;  -->
+		<!-- END tags -->
+	<!-- </p> -->
+	<p><em> {CONTENU_CHAPEAU} </em></p>
+	<div>{CONTENU_PRINCIPAL}</div>
+	
+
+</div><!-- #principal --> 

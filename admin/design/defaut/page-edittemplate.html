@@ -1,0 +1,71 @@
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+<div id="principal">	
+		
+		
+	<div id="wrapper">
+		<h1>
+		<!-- IF HAS_RIGHT -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> 
+		Edition de la page «&nbsp;{FORM_TITRE}&nbsp;»
+		<!-- IF IS_ONLINE -->
+			<sup><code>EN LIGNE</code></sup>
+			<!-- <img src="design/defaut/images/published-small.png" alt="La page est publiée (online)" title="La page est publiée (online)"/> -->
+		<!-- ELSE -->
+			<sup><code class="attention">HORS LIGNE</code></sup>
+		 <!-- <img src="design/defaut/images/unpublished-small.png" alt="La page n'est pas publiée (offline)" title="La page n'est pas publiée (offline)"/> -->
+		<!-- ENDIF --> </h1>
+		<p class="attention">
+		<!-- ID=<code>[{FORM_ID}] -- </code> 
+		Description : «&nbsp;<em>{FORM_DESCRIPTION}</em>&nbsp;»
+		<br/> -->
+		<!-- IF IS_ONLINE -->
+			Retirer la page &nbsp;<span><a href="{LINK_PUBLISH}" title="Retirer l'article"><img src="design/defaut/images/offline.png" alt="Retirer l'article"/></a></span>
+		<!-- ELSE -->
+		 Mettre la page en ligne &nbsp;<span><a href="{LINK_PUBLISH}" title="Publier l'article"><img src="design/defaut/images/online.png" alt="Publier l'article"/></a></span>
+		<!-- ENDIF -->
+		</p>
+	   <ul class="tabs">
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li><a href="{LINK_EDITCONTENT}">Editer le contenu</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li>
+			<li class="selected"><a href="{LINK_EDITTEMPLATE}">Editer le template</a></li>
+		</ul>
+		
+		<p>Attention, le choix d'un mauvais template peut provoquer une erreur...</p>
+		<p>Template squelette: choisir un template du genre <code>squelettexxx.html</code></p>
+		<p>Template page: choisir un template du genre <code>pagexxx.html</code></p>
+					
+				<form class="edit" name="editpage" method="POST" action="{FICHIER_CIBLE}">
+					
+					<fieldset class="rubrique">
+						<legend>Nouveau contenu</legend>
+						<!-- BEGIN template -->
+						<p>	<label>{template.NAME} 	<select name="template[{template.NAME}]" size="1">
+													<!-- BEGIN html -->
+													<option value="{template.html.ID}"
+													<!-- IF template.html.SELECTED -->
+													selected="selected"
+													<!-- ENDIF --> 
+													>{template.html.ID}</option>
+													<!-- END html -->
+													
+											</select>
+							</label>
+						</p>
+						<!-- END template -->
+						
+					</fieldset>
+					<input type="reset" name="nom" value="" class="refresh" />
+					<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer"/>
+				</form>
+				
+
+	</div><!-- #wrapper -->
+
+</div><!-- #principal --> 

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Help</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--  <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" />
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+	-->
+</head>
+<body>
+	<div id="global">
+	<div id="menu">
+		<ul id="example" class="filetree">
+			<li><span class="folder">Introduction</span>
+				<ul>
+					<li><span class="file"><strong><a href="index.html">Principe</a></strong></span></li>
+					<li><span class="file"><a href="specificite.html">Spécificité</a></span></li>
+				</ul>
+			</li>
+			<li><span class="folder">Fonctionnement</span>
+				<ul>
+					<li><span class="file"><a href="donnees.html">Données</a></span></li>
+					<li><span class="folder">Sytème de template</span>
+						<ul>
+							<li><span class="file"><a href="systeme_template.html">Principe</a></span></li>
+							<li><span class="file"><a href="gabarit.html">Gabarit</a></span></li>
+							<li><span class="file"><a href="moteur_de_template.html">Moteur de gabarit </a></span></li>
+							
+						</ul>
+					</li>
+					<li><span class="folder">Ré-écriture d'url</span>
+						<ul>
+							<li><span class="file"><a href="reecriture_url.html">Introdution</a></span></li>
+							<li><span class="file"><a href="reecriture_url_pratique.html">En pratique</a></span></li>
+						</ul>
+					</li>
+					<li><span class="folder">Les modules</span>
+						<ul>
+							<li><span class="file"><a href="module_page.html">Module page (base)</a></span></li>
+							<li><span class="file"><a href="module_article.html">Module article</a></span></li>
+						</ul>
+					</li>
+					<li><span class="file"><a href="plugins.html">Plugins</a></span></li>
+					<li><span class="file"><a href="systeme_cache.html">Système de cache</a></span></li>
+					<li><span class="file"><a href="gestion_droits.html">Gestion des droits</a></span></li>
+					<li><span class="file"><a href="flux_syndication.html">Flux de syndication</a></span></li>
+					<li><span class="file"><a href="dictionnaire.html">Dictionnaire</a></span></li>
+					<li><span class="file"><a href="gestion_erreur.html">Gestion des erreurs</a></span></li>
+					<li><span class="file"><a href="upload.html">Chargement de documents</a></span></li>
+					<li><span class="folder">Liste des balises</span>
+						<ul>
+							<li><span class="file"><a href="balise_page.html">Module page (base)</a></span></li>
+							<li><span class="file"><a href="balise_article.html">Module article</a></span></li>
+						</ul>
+					</li>
+					<li><span class="folder">Design</span>
+						<ul>
+							<li><span class="file"><a href="semantique_html.html">Sémantique</a></span></li>
+							<li><span class="file"><a href="balise_article.html">Référencement</a></span></li>
+							<li><span class="file"><a href="liens_design.html">Liens</a></span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<li class=""><span class="folder">Gestion du site</span>
+				<ul>
+					<li><span class="file"><a href="admin_connection.html">Connection Administration</a></span></li>
+					<li><span class="file"><a href=""></a></span></li>
+				</ul>
+			<li class="closed"><span class="folder">Autres</span>
+				<ul>
+					<li><span class="file"><a href="lexique.html">Lexique</a></span></li>
+				</ul>
+			</li>
+			<li><span class="file">File 4</span></li>
+		</ul>
+	</div>
+
+	<div id="contenu">
+		<h1>Principe</h1>
+		<p>Ce système de gestion de contenu (CMS, Content Management System) est fondé sur la séparation
+		entre les données (le texte, les articles...) et le design.</p>
+		<p>Une page internet toute simple est un fichier ayant l'extension <code>.html</code> contenant
+		bien souvent les données ainsi qu'un lien vers une feuille de style (<code>.css</code>).
+		Le fichier <code>.html</code> décrit la structure de la page (avec du contenu) tandis que le fichier
+		<code>.css</code> sert à mettre en forme le fichier <code>.html</code> (couleurs, dimensions, images
+		de fond).
+		<img class="center" alt="page internet simple" src="images/page-web-simple.png"/>
+		</p>
+		<p>Comment s'affiche la page sur l'écran de l'ordinateur ? Le navigateur internet (windows explorer par exemple) 
+		envoit une requête au serveur : "Envoit-moi la page www.site.com/lapage.html". Le serveur regarde si cette page
+		existe chez lui et l'envoie au navigateur qui l'affiche. Dans ce cas-là, le serveur ne fait que d'envoyer des
+		données, il n'effectue pas de traitement d'information. Les pages sont donc statiques (elles ne changent pas 
+		au cours du temps).<br/>
+		<img class="center" alt="page internet simple" src="images/navigateur-to-serveur.png"/>
+		</p>
+		<p>Dans le cas de ce site internet, toutes les informations nécessaires à l'affichage sont contenues dans
+		un fichier <code>.xml</code> ainsi que dans un fichier <code>.xml</code> contenant l'arborescence du site (le menu).
+		Le <code>XML</code> ressemble un peu au <code>HTML</code> vu que le <code>HTML</code> est
+		un dérivé du <code>XML</code>. Ce fichier <code>.xml</code> contient 3 parties principales:
+		<ul>
+			<li>Les métadonnées (<code>&lt;info&gt;</code>), c'est-à-dire le nom de l'auteur, la date de création/modification 
+			du fichier, la description de la page, les mots-clefs etc.</li>
+			<li>Le design (<code>&lt;design&gt;</code>), c'est à dire quels fichiers <code>.html</code> et <code>.css</code>
+			 doivent être utilisés.</li>
+			<li>Le contenu proprement dit (<code>&lt;contenu_principal&gt;</code> et <code>&lt;contenu_secondaire&gt;</code>), c'est-à-dire
+			 le code <code>HTML</code> de l'article (contenu principal) et des informations supplémentaires (contenu secondaire).</li>
+		</ul>
+		Voilà à quoi ressemble un fichier <code>.xml</code> :
+		<img class="center" alt="page internet simple" src="images/data-xml.png"/>
+		</p>
+		<p>Dans le cas de ce site, le navigateur envoit au serveur l'url (= l'adresse) de la page, par exemple 
+		<code>www.monsite.com/la-super-page.html</code>.
+		Le serveur analyse l'url, cherche le(s) fichier(s) de données <code>.xml</code> correspondant. Il lit le(s) fichier(s),
+		puis cherche les fichiers <code>.html</code> (la structure) et <code>.css</code> (la mise en forme). Il met les données dans
+		les fichiers <code>.html</code> et affiche le tout. Cela s'appelle du "<a href="systeme_template.html">parsing</a>". 
+		Du côté serveur, celui qui effectue tout ce travail est la langage <code>PHP</code>.
+		<img class="center" alt="page internet simple" src="images/navigateur-to-serveur-php.png"/>
+		</p>
+		<p>
+		Et voilà par exemple la page que le serveur affiche :<br/>
+		<img class="center" alt="page internet simple" src="images/page-du-site.png"/>
+		</p>
+		<p></p>
+	</div>
+	</div>
+
+
+</body>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!-- <link rel="stylesheet" href="http://jquery.bassistance.de/treeview/demo/screen.css" type="text/css" /> -->
+	<link rel="stylesheet" href="http://jquery.bassistance.de/treeview/jquery.treeview.css" type="text/css" />
+	<script type="text/javascript" src="http://jquery.bassistance.de/treeview/jquery.treeview.js"></script>
+	<script>
+	$(document).ready(function(){
+	$("#example").treeview();
+	});
+	</script>
+</html>

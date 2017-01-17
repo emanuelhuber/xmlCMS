@@ -1,0 +1,84 @@
+
+<div id="secondaire">	
+		{CONTENU_SECONDAIRE}
+	<div class="box">
+		<a href="{LIEN_TOUS_LES_ARTICLES}">Tous les articles</a>
+	</div>
+	<div class="box">
+		<div class="titreCategorie">Auteurs</div>
+		<hr/>
+		<!-- BEGIN auteur -->
+			<a href="{auteur.LIEN}">{auteur.NOM} ({auteur.NOMBRE})</a> <br/>
+				<!-- BEGIN fils -->
+					&nbsp;&nbsp;&nbsp;&nbsp;<a href="{auteur.fils.LIEN}">{auteur.fils.NOM} ({auteur.fils.NOMBRE})</a> <br/>
+				<!-- END fils -->
+		<!-- END auteur -->
+	</div>
+	<div class="box">
+		<div class="titreCategorie">Mots-clefs</div>
+		<hr/>
+		<!-- BEGIN motclef -->
+			<a href="{motclef.LIEN}">{motclef.NOM} ({motclef.NOMBRE})</a> <br/>
+				<!-- BEGIN fils -->
+					&nbsp;&nbsp;&nbsp;&nbsp;<a href="{motclef.fils.LIEN}">{motclef.fils.NOM} ({motclef.fils.NOMBRE})</a> <br/>
+				<!-- END fils -->
+		<!-- END motclef -->
+	</div>
+	<div class="box">
+		<div class="titreCategorie">Dates</div>
+		<hr/>
+		<!-- BEGIN year -->
+			<a href="{year.LIEN}">{year.NOM} ({year.NOMBRE})</a> <br/>
+				<!-- BEGIN month -->
+					&nbsp;&nbsp;&nbsp;&nbsp;<a href="{year.month.LIEN}">{year.month.NOM} ({year.month.NOMBRE})</a> <br/>
+				<!-- END month -->
+		<!-- END year -->
+	</div>
+</div><!-- #secondaire -->
+
+<div id="principal">	
+	<div id="chemin2fer">
+		<img src="design/ichthus/images/camp.png" alt="{L_VOUS_ETES_ICI}"/> 
+		<!-- BEGIN crumbs -->	
+			<!-- IF crumbs.IS_LINK -->
+			<a href="{crumbs.LINK}" title="{crumbs.TITLE}">{crumbs.NAME}</a>
+			<!-- ELSE -->
+				{crumbs.NAME}
+			<!-- ENDIF -->
+				<img src="design/ichthus/images/fleche_droite_rouge.gifc" alt="fleche rouge"/>
+		<!-- END crumbs -->
+		{CURRENT_CRUMB}
+	</div>
+	
+	
+	<h2>{INFO_TITRE}</h2>
+	<!-- <p><em>{CONTENU_CHAPEAU}</em></p>
+	<p>{MESSAGE}</p>
+
+	<p>Nombre d'article trouvé : {NB_ARTICLE}</p> -->
+	
+	<!-- IF IS_NAVIGATION -->
+	<p>Previous &nbsp;	
+		<!-- BEGIN navigation -->
+			<a href="{navigation.LINK}" title="page">{navigation.NB}</a>&nbsp;
+		<!-- END navigation -->
+		&nbsp; Next</p>
+	<!-- ENDIF -->
+	
+		
+	<!-- IF IS_SELECTION -->
+		<p>
+		Recherche : {CRITERIUM} = {VALUE}
+		</p>
+	<!-- ENDIF -->
+	
+	<!-- BEGIN article -->
+		<h3 class="gallerie">
+			<a href="{article.LIEN}"  title="article"><img class="gallerie" src="{article.IMAGE}" alt="Icones"/></a><a href="{article.LIEN}"  title="article">{article.TITRE}</a>
+		</h3>
+		<p> {article.DESCRIPTION} </p> 
+		<!-- <span>{article.DATE} {article.NOM_JOUR} {article.JOUR} {article.MOIS} {article.ANNEE} -  {article.AUTEUR} </span><br/>
+		-->
+		<!-- <p><a href="{article.LIEN}"  title="article">Suite</a></p> -->
+	<!-- END article -->
+</div><!-- #principal --> 

@@ -1,0 +1,36 @@
+﻿<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h2>{TITRE}</h2>
+	<img class="aligner_droite" alt="quiz" src="design/defaut/images/point_interrogation2.png" width="100px"/>
+
+	<div id="quizFrame">
+		<div class="quiz_intitule">Question n&deg;{QUESTION_NO}/{QUESTION_NB}</div>
+		<hr/>
+		<span class="quiz_question">{QUESTION}</span>
+		
+		<form class="quiz" name="quiz" method="post" class="form" action="{FICHIER_CIBLE}">
+			<!-- BEGIN reponses -->		
+					<input type="radio" name="answer" value="{reponses.NO}" class="radio" id="{reponses.ID}"/>
+						<label for="{reponses.ID}">{reponses.REPONSE}</label>
+						<br/>
+			<!-- END reponses -->			
+			
+				<!--	<input type="radio" name="answer" value="1" class="radio" id="answer1"/>
+						<label for="answer1">Caïn et Abel</label>
+						<br/>
+					<input type="radio" name="answer" value="0" class="radio" id="answer2"/>
+						<label for="answer2">David et Salomon</label>
+						<br/>
+					<input type="radio" name="answer" value="0" class="radio" id="answer3"/>
+						<label for="answer3">Abraham et Isaac</label>
+						<br/>
+				-->
+			<div class="right">
+				<input type="submit" value="Envoyer" name="suivant"/>
+			</div>
+		</form>
+	</div>
+</div><!-- #principal --> 

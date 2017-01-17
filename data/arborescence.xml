@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <langue id="fr" nom="français">
+    <page id="fr,page,welcome" nom="Welcome!" module="page" soeur="" menu="1" publication="1" droits="-1"/>
+    <page id="fr,login" module="login" nom="Login" soeur="" menu="0" publication="1" droits="-1"/>
+    <page id="fr,erreur" module="erreur" nom="Fehler" soeur="" menu="0" publication="1" droits="-1"/>
+  </langue>
+</menu>

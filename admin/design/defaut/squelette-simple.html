@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- META-DONNEES  -->
+	<title>{INFO_TITRE}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="S. Huber" lang="de" content="Carl Friedrich Gauss"/>
+	<meta name="description" content="{INFO_DESCRIPTION}"/>
+	<meta name="keywords" content="{INFO_MOTSCLEFS}"/>
+	<meta name="robots" content="index,follow" />
+
+	<!-- Pour inclure un FAVICON -->
+	<link rel="shortcut icon" href="favicon.icoc" type="image/x-icon" />
+
+	<!-- BEGIN css -->
+	<link rel="stylesheet"  media="{css.MEDIA}" type="text/css" href="{css.REF}"/>
+	<!-- END css -->
+	<!-- BEGIN script -->
+	<script language="{script.LANGAGE}" type="{script.TYPE}" src="{script.SRC}"></script>
+	<!-- END script -->
+</head>
+
+
+<body>
+
+<!-- La petite flèche pour retourner en haut de la page qui se déplace avec le défilement de la page... -->
+	<div id="pagetop"><span><a href="#debut"><img alt="top" src="design/defaut/images/top.gifc"/></a>
+		</span>
+	</div>
+	
+<!-- Lien vers lequel la flèche mobile pointe. Il s'agit d'un lien intern à la page. -->
+	<a name="debut"></a>
+
+<div id="global">
+	<div id="login">
+		<!-- IF CONNECTED -->
+			{L_WELCOME} {USERNAME} |
+			Groupe: {GROUPNAME} |
+			<a href="{LOGOUT_CONNECTION}">{L_LOGOUT}</a>
+		<!-- ELSE -->
+			 <a href="{LOGIN_CONNECTION}">{L_LOGIN}</a>
+		<!-- ENDIF -->
+	</div>
+	
+	<div id="entete">
+		<img alt="" src="design/defaut/images/logo.pngc" />
+	</div><!-- #entete -->
+	<div id="menuhorizontal">
+		<div id="langue">
+			<!-- BEGIN languages -->
+			<a class="drapeau{languages.ACTIVE}" href="{languages.LINK}" title="{languages.NAME}"><img alt="{languages.NAME}" src="design/defaut/images/drapeau_{languages.ID}.pngc"/></a>
+			<!-- END languages -->
+		</div>
+		<div id="menurapide">
+			<ul>
+				<!-- BEGIN chapter -->
+				<li><a href="{chapter.LINK}" <!-- IF chapter.T_CLASS --> class="activ" <!-- ENDIF --> >{chapter.NAME}</a>  &nbsp;&nbsp;</li>
+				<!-- END chapter -->
+			</ul>
+		</div>
+		<div id="optionpage">
+			OPTION PAGE
+		</div>
+		
+		<!-- BEGIN alert -->
+		<div class="alert">
+			{L_ALERTE} ({alert.JOUR} {alert.MOIS} {alert.ANNEE}).
+		</div>
+		<!-- END alert -->
+	</div><!-- #menuhorizontal -->
+	
+	<div id="contenu">
+		<div id="contenu-bis">
+			<div id="chemin2fer">
+					{L_VOUS_ETES_ICI} 
+					<!-- BEGIN crumbs -->	
+						<!-- IF crumbs.IS_LINK -->
+							<a href="{crumbs.LINK}" title="{crumbs.TITLE}">{crumbs.NAME}</a>
+						<!-- ELSE -->
+							{crumbs.NAME}
+						<!-- ENDIF -->
+						<img src="design/defaut/images/fleche_droite_rouge.gifc" alt="fleche rouge"/>
+					<!-- END crumbs -->
+						{CURRENT_CRUMB}
+					
+				</div>
+			{PAGE}
+	
+	
+		
+				
+				
+		</div><!-- #contenu-bis -->
+	</div><!-- #contenu -->
+
+	<div id="pied">
+		<a href="http://www.eglise.catholique.fr/accueil.html">Accueil</a> | <a href="http://www.eglise.catholique.fr/plan-du-site.html">Plan du site</a> | <a href="http://www.eglise.catholique.fr/mentions-legales.html">Mentions l&eacute;gales</a> | <a href="http://www.eglise.catholique.fr/partenariats.html">Partenariats</a> | <a href="http://www.eglise.catholique.fr/contact.html?AuteurID=1">Contact</a>
+		<p id="copyright">
+			&copy; Ichthus 2013
+		</p>
+		<p>Dernière modification : {FILETIME}</p>
+		<p>Nom fichier internet : {FILENAME_WEB}</p>
+		<p><!-- IF T_COMP_GZIP -->
+			Compression GZIP activée
+			<!-- ELSE -->
+			Pas de compression GZIP
+			<!-- ENDIF --></p>
+				<p>{ACTIVE_LANG} ({ACTIVE_LANG_ID})</p>
+		<p>Theme : [{INFO_THEME}]:  ---- Style : [{INFO_STYLE}]</p>
+		<p>
+		<!-- BEGIN template_html -->
+			Nom : [{template_html.NAME}] ==> [{template_html.FILE}]<br/>
+		<!-- END template_html -->
+	
+		<p>
+		<p><a href="http://validator.w3.org/check/referer">XHTML</a> & <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
+		
+	</div><!-- #pied -->
+</div><!-- #page -->
+</body>
+</html>

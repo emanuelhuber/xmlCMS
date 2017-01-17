@@ -1,0 +1,26 @@
+<div id="secondaire">
+
+
+
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h2>Edition de la clef de l'API de Googlemap "<code>{ID}</code>"</h2>
+	<p>Apparement cette clef n'est plus nécessaire au bon fonctionnement de googlemap (à vérifier)</p>
+	<form class="edit" name="editContent" method="POST" action="{FICHIER_CIBLE}">	
+			<fieldset class="contenu">
+					<label> Contenu<br/>
+					<textarea name="content" cols="80" rows="10" class="wymeditor"> {CONTENT}</textarea>
+					</label>
+			</fieldset>
+				
+				
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

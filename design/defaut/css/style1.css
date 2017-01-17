@@ -1,0 +1,30 @@
+
+/*
+NOIR FONCE: #009605;
+NOIR CLAIR: #00B506;
+
+*/
+
+#menu-horizontal{
+	background-color:#000000;
+}
+#menu-horizontal a.activated {
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+
+#menu ul a {
+	background-image:url("../images/menu_col1_assoc.pngc");
+}
+#menu ul a.actif, #menu ul a.actifnochild {
+	background-image:url("../images/menu_col2_assoc.pngc");
+}
+#menu ul a:hover, #menu ul a:active, #menu ul a:focus {
+	background-image:url("../images/menu_col2_assoc.pngc");
+
+}
+
+#principal {
+	background:url("../images/fond_association.pngc") no-repeat left top;
+}

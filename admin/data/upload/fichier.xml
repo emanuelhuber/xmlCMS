@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Upload]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="upload-fichier.html" apercu="upload-fichier-apercu.html"/>
+  <contenu>
+    <principal><![CDATA[ ]]>
+	</principal>
+    <secondaire><![CDATA[
+	<h3>Code d'erreur</h3>
+	<p><strong>0</strong> (UPLOAD_ERR_OK) Aucune erreur, le téléchargement est correct.</p>
+	<p><strong>1</strong> (UPLOAD_ERR_INI_SIZE) Le fichier téléchargé excède la taille de upload_max_filesize, configurée dans le php.ini.</p>
+	<p><strong>2</strong> (UPLOAD_ERR_FORM_SIZE) Le fichier téléchargé excède la taille de MAX_FILE_SIZE, qui a été spécifiée dans le formulaire HTML.</p>
+	<p><strong>3</strong> (UPLOAD_ERR_PARTIAL) Le fichier n'a été que partiellement téléchargé.</p>
+	<p><strong>4</strong> (UPLOAD_ERR_NO_FILE) Aucun fichier n'a été téléchargé.</p>
+	<p><strong>5</strong> (UPLOAD_ERR_NO_TMP_DIR)  Un dossier temporaire est manquant. Introduit en PHP 4.3.10 et PHP 5.0.3.</p>
+	<p><strong>6</strong> (UPLOAD_ERR_NO_TMP_DIR) Un dossier temporaire est manquant. Introduit en PHP 4.3.10 et PHP 5.0.3.</p>
+	<p><strong>7</strong> (UPLOAD_ERR_CANT_WRITE) Échec de l'écriture du fichier sur le disque. Introduit en PHP 5.1.0.</p>
+	<p><strong>8</strong> (UPLOAD_ERR_EXTENSION) Une extension PHP a arrété l'envoi de fichier. PHP ne propose aucun moyen de déterminer quelle extension est en cause. L'examen du phpinfo() peut aider. Introduit en PHP 5.2.0.</p>
+]]></secondaire>
+  </contenu>
+</page>

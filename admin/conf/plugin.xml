@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<plugins>
+		<item id="citationAleatoire" nom="Citation aléatoire" actif="1" type="0" description="A partir d'une liste de versets et référence, affiche le verset du jour ainsi que sa référence
+		là où vous voulez."/>
+		<item id="googleMap" nom="Google Map" actif="1" type="0" description="Affiche une carte googlemap selon un fichier de configuration"/>
+		<item id="inclureEncart" nom="Inclure un encart" actif="1" type="0" description="Affiche un encart, par exemple dans la colonne de droite. L'intérêt de ce plugin est que vous pouvez
+		afficher sur plusieurs page le même contenu sans avoir à l'écrire plusieurs fois."/>
+	</plugins>
+</document>

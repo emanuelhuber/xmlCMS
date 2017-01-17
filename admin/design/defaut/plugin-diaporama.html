@@ -1,0 +1,47 @@
+<div id="secondaire">
+	
+	<h1>Créer un nouveau diaporama</h1>
+	<p>Pour créer un nouveau diaporama, chargez vous-même les fichiers via FTP sur le site.
+	Déposez dans le dossier "votre-site/data/plugin/diaporama/" un dossier ayant le nom de votre 
+	diaporama (en minuscule, que des lettres et des tirets, pas d'espaces) contenant:</p>
+	<ul>
+		<li>Un fichier texte nommé "config.txt" contenant la configuratio Javascritp (voir sur ce 
+			<a href="http://jquery.malsup.com/cycle/">site</a> pour les détails).</li>
+		<li>Un dossier nommé "images" contenant uniquement les images du diaporama. Ces images devraient être toutes de la même taille et
+			cette taille doit correspondre à l'agencement de votre site.</li>
+	</ul>
+	
+	<img src="design/defaut/images/idea.png" width="50px"/>
+	{CONTENU_SECONDAIRE}
+	
+	<h1>Utlisation</h1>
+	<pre><code>%%%&nbsp;PLUGIN diaporama:scout %%%</code></pre>
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h1>Diaporama JavaScript</h1>
+
+	<div id="wrapper">
+	    <ul class="tabs">
+			<li class="selected"><a href="{LINK_USER}">Diaporamas</a></li>
+		</ul>
+		<div class="edit">
+			<ul>
+			<!-- BEGIN liste -->
+						<li><strong><code>{liste.ID}</code></strong>
+						<a href="{liste.DELETE_LINK}"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+						<!-- <a href="{list.EDIT_LINK}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer l'utilisateur"/></a> -->
+						
+						
+						</li>
+			
+			<!-- END liste -->
+			</ul>
+		</div>
+	</div>
+	
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

@@ -1,0 +1,43 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+<div id="principal">	
+	<div id="wrapper">
+	
+	<h1>Supprimer la collection d'articles "{FORM_TITRE}"</h1>
+		
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Supprimer cette collection d'articles ?</legend>
+				<p> Voulez-vous vraiment supprimer cette collection d'articles ???<br/>
+					<strong>Titre</strong> : {FORM_TITRE} <br/>
+					<strong>ID</strong> : <code>[{FORM_ID}]</code>  <br/>
+					<strong>Auteur</strong> : {FORM_AUTEUR} <br/>
+					<strong>Description</strong> : {FORM_DESCRIPTION} <br/>
+					<strong>Mots-clefs</strong> : {FORM_MOTSCLEFS} <br/>
+					<strong>Nombre d'articles</strong> : {NB_ARTICLES} <br/>
+					<!-- IF HAS_RIGHT -->
+					<strong>Droits</strong> : {RIGHT_NAME}
+					<!-- ENDIF -->
+				</p>
+				<p><label><input type="radio" name="ok" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" checked="checked"/>Non</label><br/></p>
+				<p><em>Attention</em>, tous les articles de cette collection seront supprimés!</p>
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	</div>
+	
+	{CONTENU}
+</div><!-- #principal --> 

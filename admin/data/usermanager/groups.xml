@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <info>
+    <titre><![CDATA[Groupes]]></titre>
+    <auteur><![CDATA[Emanuel]]></auteur>
+    <date><![CDATA[11.03.2010]]></date>
+    <description><![CDATA[Page d'accueil de notre super site internet]]></description>
+    <motsclefs><![CDATA[willkommen, accueil, amour, amour, société, commencement]]></motsclefs>
+    <droit><![CDATA[0]]></droit>
+    <commentaire><![CDATA[0]]></commentaire>
+    <image><![CDATA[#]]></image>
+    <miniature><![CDATA[#]]></miniature>
+    <publication><![CDATA[1]]></publication>
+  </info>
+  <design theme="defaut" style="defaut" squelette="squelette.html" page="usermanagement-groups.html" edit="usermanagement-groupedit.html" add="usermanagement-groupadd.html" delete="usermanagement-groupdelete.html"/>
+  <contenu>
+    <groups>
+      <grp id="a1" right="16">
+        <name><![CDATA[Group1]]></name>
+        <description><![CDATA[Specific rights]]></description>
+      </grp>
+      <grp id="a2" right="5">
+        <name><![CDATA[Manu]]></name>
+        <description><![CDATA[Can do a lot of things]]></description>
+      </grp>
+      <grp id="a3" right="47">
+        <name><![CDATA[Reponsable]]></name>
+        <description><![CDATA[Tous les droits sauf administration]]></description>
+      </grp>
+      <grp id="a4" right="127">
+        <name><![CDATA[ADMIN]]></name>
+        <description><![CDATA[Tous les droits]]></description>
+      </grp>
+    </groups>
+    <rights>
+      <item id="0" activated="1">
+        <name><![CDATA[AMIS]]></name>
+        <description><![CDATA[Pour les amis de l'association.]]></description>
+      </item>
+      <item id="1" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="2" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="3" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="4" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="5" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="6" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="7" activated="1">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="8" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="9" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="10" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="11" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="12" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="13" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="14" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="15" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="16" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="17" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="18" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="19" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="20" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="21" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="22" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="23" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="24" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="25" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="26" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="27" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="28" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="29" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+      <item id="30" activated="0">
+        <name><![CDATA[ADMINISTRATEUR]]></name>
+        <description><![CDATA[Pages accessibles aux ]]></description>
+      </item>
+    </rights>
+    <principal><![CDATA[      
+		]]></principal>
+    <secondaire><![CDATA[					 
+				]]></secondaire>
+  </contenu>
+</page>

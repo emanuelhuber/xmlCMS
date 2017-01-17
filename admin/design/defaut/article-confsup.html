@@ -1,0 +1,42 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<!-- IF IS_SAVECONFIRMATION -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> {L_SAVECONFIRMATION}  {SAVECONFIRMATION_DATE}</p>
+		</div>
+	<!-- ENDIF --> 
+	<div id="wrapper">
+		<h1>Edition de l'article «&nbsp;{FORM_TITRE}&nbsp;»</h1>
+		<p><!-- IF IS_ONLINE -->
+			<img src="design/defaut/images/published-small.png" alt="l'article est publié (online)" title="l'article est publié (online)"/>
+		<!-- ELSE -->
+		 <img src="design/defaut/images/unpublished-small.png" alt="L'article n'est pas publié (offline)" title="L'article n'est pas publié (offline)"/>
+		<!-- ENDIF --> 
+		<!-- IF HAS_RIGHT -->
+		<!-- ELSE -->
+			<img src="design/defaut/images/clef.png" alt="Droits d'accès" title="Cette page possède des droits d'accès"/>
+		<!-- ENDIF --> <code>{FORM_ID}</code></p>
+		<!-- <p><strong>...dans la collection d'articles : "<a href="{LINK_INDEX}">{TITRE_COLLECTION}</a>"</strong>&nbsp;:<br/>
+		<em>{FORM_DESCRIPTION}</em></p> -->
+		<ul class="tabs">
+			<li><a href="{LINK_INDEX}">Index</a></li>
+			<li><a href="{LINK_EDITINFO}">Editer les métadonnées</a></li>
+			<li><a href="{LINK_EDITMENU}">Editer le menu</a></li>
+			<li><a href="{LINK_EDITDESIGN}">Editer le design</a></li>
+			<li class="selected"><a href="#">Supprimer un article</a></li>
+		</ul>
+
+		<p> Confirmation de suppression de l'article :<br/>
+			<strong>Titre</strong> : {FORM_TITRE} <br/>
+			<strong>Auteur</strong> : {FORM_AUTEUR} <br/>
+			<strong>Description</strong> : {FORM_DESCRIPTION} <br/>
+			<strong>Mots-clefs</strong> : {FORM_MOTSCLEFS} <br/>
+
+		</p>
+	</div>		
+	{CONTENU}
+</div><!-- #principal --> 

@@ -1,0 +1,110 @@
+<div id="secondaire">
+	<h1>Légende</h1>
+	
+	<table border="0px">
+	<tr>
+		<td>
+			<img src="design/defaut/images/arrow_up.png" alt="Remonter"/> Remonter la page<br/>
+			<img src="design/defaut/images/arrow_down.png" alt="Descendre"/> Descendre la page<br/>
+			<img src="design/defaut/images/arrow_right.png" alt="Droite"/> Décaler vers la droite<br/>
+			<img src="design/defaut/images/arrow_left.png" alt="Gauche"/> Décaler vers la gauche<br/>
+			<!-- <img src="design/defaut/images/editer-page.png" alt="Editer la page"/> Editer<br/> -->
+			<img src="design/defaut/images/supprimer-page.png" alt="Supprimer la page"/> Supprimer<br/>
+		</td>
+	</table>
+	<br/>	
+	<hr/>
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal">
+	<h1>Liste des contenus</h1>
+
+<p><a href="{LIEN_CREER_PAGE}" title="Créer une nouvelle page"><img src="design/defaut/images/page-ajouter.png" alt="Créer une nouvelle page"/></a>
+<a href="{LIEN_CREER_PAGE}" title="Créer une nouvelle page">Créer une nouvelle page</a>
+ &nbsp;&nbsp;&nbsp;
+ <a href="{LIEN_LANGUE}" title="Ajouter une nouvelle langue"><img src="design/defaut/images/drapeaux.jpg" alt="Ajouter une nouvelle langue"/></a>
+ <a href="{LIEN_LANGUE}" title="Ajouter une nouvelle langue">Ajouter une nouvelle langue</a></p>
+
+
+	
+
+	<ul id="tree" class="filetree">
+	<!-- BEGIN lg -->
+		<li><span class="folder"><em><img src="design/defaut/images/drapeau_{lg.ID}.png" alt="{lg.NAME}"/>  {lg.NAME}</em> 
+			<a href="{lg.LINK_DELETE}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></span>
+			<ul>
+			<!-- BEGIN mymenu -->
+				<!-- IF lg.mymenu.T_FLAT -->
+				<li>
+				<!-- ENDIF -->
+				<!-- IF lg.mymenu.T_UP -->
+				<li>
+				<!-- ENDIF -->
+				
+				<!-- IF lg.mymenu.T_DOWN -->
+				<ul><li   
+					<!-- IF lg.mymenu.T_PUBLIER -->
+						class="publier"
+					<!-- ELSE -->
+						class="brouillon"
+					<!-- ENDIF -->
+				>
+				<!-- ENDIF -->
+						<span 
+						<!-- IF lg.mymenu.T_FOLDER -->
+							class="folder"
+						<!-- ELSE -->
+							class="file"
+						<!-- ENDIF -->	
+						><a href="{lg.mymenu.LIEN_EDITER}" title="Editer">{lg.mymenu.NAME}</a> ({lg.mymenu.MOD})
+						<a href="{lg.mymenu.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a>
+						<a href="{lg.mymenu.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a>
+						<!-- IF lg.mymenu.T_LEFT -->
+						<a href="{lg.mymenu.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+						<!-- ENDIF -->
+						<!-- IF lg.mymenu.T_RIGHT -->
+						<a href="{lg.mymenu.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+						<!-- ENDIF -->
+						<!-- <a href="{lg.mymenu.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a> -->
+						<a href="{lg.mymenu.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+							<!-- IF lg.mymenu.T_IN_MENU -->
+								&nbsp;in menu&nbsp;
+							<!-- ELSE -->
+								&nbsp;<strike>in menu</strike>&nbsp;
+							<!-- ENDIF -->
+							<!-- IF lg.mymenu.T_PUBLIER -->
+								|&nbsp;online
+							<!-- ELSE -->
+								|&nbsp;offline
+							<!-- ENDIF -->
+							|&nbsp;droits :&nbsp;{lg.mymenu.DROITS}
+
+						</span>	
+				<!-- IF lg.mymenu.T_CHILD -->
+					
+				<!-- ELSE -->	
+					</li>
+				<!-- ENDIF -->
+				
+				<!-- BEGIN up -->
+					</ul>
+					</li>
+				<!-- END up -->
+				
+			<!-- END mymenu -->		
+			</ul>
+	
+		</li>
+	<!-- END lg -->
+	</ul>
+		
+	
+	<hr/>
+
+	
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 

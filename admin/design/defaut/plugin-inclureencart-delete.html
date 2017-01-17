@@ -1,0 +1,32 @@
+<div id="secondaire">
+	{CONTENU_SECONDAIRE}
+	
+</div><!-- #secondaire -->
+
+<div id="principal">
+		<!-- BEGIN info -->
+		<div id="info">
+			<p><img src="design/defaut/images/info.png" alt="enregistré"> Enregistré  {info.DATE}</p>
+		</div>
+		<!-- END info -->
+	
+	<h1>Supprimer l'encart "<code>{ID}</code>"</h1>
+		<form class="edit" name="editinfo" method="POST" action="{FICHIER_CIBLE}">
+			
+			<fieldset class="metadonnees">
+				<legend>Supprimer cet encart ?</legend>
+				<p> Voulez-vous vraiment supprimer cet encart ?<br/>
+					<strong>ID</strong> : {ID} <br/>
+				</p>
+				<div  style="background-color:RGB(210,210,210);border:1px grey solid;overflow:hidden; width:400px;height:260px;padding: 10px;" >{LIGHT_CONTENT}</div>
+				<p><label><input type="radio" name="ok" value="ok"/>Oui</label><br/>
+				<label><input type="radio" name="ok" value="cancel" checked="checked"/>Non</label><br/></p>
+			</fieldset>
+
+			<input type="reset" name="nom" value="" class="refresh" />
+			<input type="image" name="nom" src="design/defaut/images/save.png"  alt="Enregistrer" class="wymupdate" />
+			<!-- <a href="{LIEN_APERCU}" title="Aperçu"><img src="design/defaut/images/apercu.png" alt="Aperçu"/></a> -->
+		</form>
+	
+	{CONTENU}
+</div><!-- #principal --> 

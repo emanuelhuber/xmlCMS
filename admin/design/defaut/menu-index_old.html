@@ -1,0 +1,368 @@
+<div id="secondaire">
+	<h1>Légende</h1>
+	
+	<table border="0px">
+	<tr>
+		<td>
+			<img src="design/defaut/images/arrow_up.png" alt="Remonter"/> Remonter la page<br/>
+			<img src="design/defaut/images/arrow_down.png" alt="Descendre"/> Descendre la page<br/>
+			<img src="design/defaut/images/arrow_right.png" alt="Droite"/> Décaler vers la droite<br/>
+			<img src="design/defaut/images/arrow_left.png" alt="Gauche"/> Décaler vers la gauche<br/>
+			
+
+			<img src="design/defaut/images/editer-page.png" alt="Editer la page"/> Editer<br/>
+			<img src="design/defaut/images/supprimer-page.png" alt="Supprimer la page"/> Supprimer<br/>
+		</td>
+	</table>
+	<br/>	
+	<hr/>
+	{CONTENU_SECONDAIRE}
+</div><!-- #secondaire -->
+
+<div id="principal_large">
+	<h1>Liste des contenus</h1>
+
+<p><a href="{LIEN_CREER_PAGE}" title="Créer un nouveau contenu"><img src="design/defaut/images/page-ajouter.png" alt="Créer un nouveau contenu"/></a>
+<a href="{LIEN_CREER_PAGE}" title="Créer un nouveau contenu">Créer un nouveau contenu</a>
+ &nbsp;&nbsp;&nbsp;
+ <a href="{LIEN_LANGUE}" title="Ajouter une nouvelle langue"><img src="design/defaut/images/drapeaux.jpg" alt="Ajouter une nouvelle langue"/></a>
+ <a href="{LIEN_LANGUE}" title="Ajouter une nouvelle langue">Ajouter une nouvelle langue</a></p>
+
+<table  class="Tablemenu"style="border-collapse">
+	<tr>
+
+		<th>Contenu</th>
+		<th>Module</th>
+		<th> </th>
+		<th> </th>
+		<th> </th>
+
+		<th> </th>
+		<th> </th>
+		<th> </th>
+		<th>Dans<br/>menu</th>
+		<th> Publié </th>
+		<th> Droits </th>
+
+
+	</tr>
+	
+
+	<ul id="tree" class="filetree">
+	<!-- BEGIN lg -->
+		<li><span class="folder"><em><img src="design/defaut/images/drapeau_{lg.ID}.png" alt="{lg.NAME}"/>  {lg.NAME}</em> 
+			<a href="{lg.LINK_DELETE}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></span>
+			<ul>
+			<!-- BEGIN mymenu -->
+				<li>
+					<!-- BEGIN down -->
+						<ul>
+					<!-- END down -->	
+						<span 
+						<!-- IF lg.mymenu.T_CHILD -->
+							class="folder"
+						<!-- ELSE -->
+							class="file"
+						<!-- ENDIF -->	
+						
+						>{lg.mymenu.NAME} ({lg.mymenu.MOD})
+						</span>	
+					<!-- BEGIN up -->
+						</ul>
+					<!-- END up -->
+				</li>
+			<!-- END mymenu -->		
+			</ul>
+	
+		</li>
+	<!-- END lg -->
+	</ul>
+		
+	
+	<hr/>
+
+		
+	<ul id="tree" class="filetree">
+	<!-- BEGIN lg -->
+		<li><span class="folder"><em><img src="design/defaut/images/drapeau_{lg.ID}.png" alt="{lg.NAME}"/>  {lg.NAME}</em> 
+			<a href="{lg.LINK_DELETE}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></span>
+			<ul>
+			<!-- BEGIN mymenu -->
+				<li>
+					<!-- IF lg.mymenu.T_DOWN -->
+						<ul>
+					<!-- ENDIF -->	
+						<span 
+						<!-- IF lg.mymenu.T_CHILD -->
+							class="folder"
+						<!-- ELSE -->
+							class="file"
+						<!-- ENDIF -->	
+						
+						>{lg.mymenu.NAME} ({lg.mymenu.MOD})
+						</span>	
+					<!-- IF lg.mymenu.T_UP -->
+						</ul>
+					<!-- ENDIF -->	
+				</li>
+			<!-- END mymenu -->		
+			</ul>
+	
+		</li>
+	<!-- END lg -->
+	</ul>
+	
+	
+	
+	
+	
+	<hr/>
+	
+	
+	<ul id="tree" class="filetree">
+	<!-- BEGIN arbo1 -->
+		<li><span class="folder"><em><img src="design/defaut/images/drapeau_{arbo1.ID}.png" alt="{arbo1.NAME}"/>  {arbo1.NAME}</em> 
+			<a href="{arbo1.LINK_DELETE}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></span>
+			<ul>
+			<!-- BEGIN arbo2 -->
+				<li><span 
+				<!-- IF arbo1.arbo2.T_CHILDREN -->
+					class="folder"
+				<!-- ELSE -->
+					class="file"
+				<!-- ENDIF -->	
+				
+				>{arbo1.arbo2.NOM} ({arbo1.arbo2.MODULE})
+				<a href="{arbo1.arbo2.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a>
+				<a href="{arbo1.arbo2.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a>
+				<!-- IF arbo1.arbo2.T_LEFT -->
+				<a href="{arbo1.arbo2.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+				<!-- ENDIF -->
+				<!-- IF arbo1.arbo2.T_RIGHT -->
+				<a href="{arbo1.arbo2.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+				<!-- ENDIF -->
+				<a href="{arbo1.arbo2.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+				<a href="{arbo1.arbo2.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+					<!-- IF arbo1.arbo2.T_IN_MENU -->
+						&nbsp;in menu&nbsp;
+					<!-- ELSE -->
+						&nbsp;<strike>in menu</strike>&nbsp;
+					<!-- ENDIF -->
+					<!-- IF arbo1.arbo2.T_PUBLIER -->
+						|&nbsp;online
+					<!-- ELSE -->
+						|&nbsp;offline
+					<!-- ENDIF -->
+					|&nbsp;droits :&nbsp;{arbo1.arbo2.DROITS}
+				</span>
+					<!-- IF arbo1.arbo2.T_CHILDREN -->
+					<ul>
+					<!-- BEGIN arbo3 -->
+						<li><span 
+					<!-- IF arbo1.arbo2.arbo3.T_CHILDREN -->
+						class="folder"
+					<!-- ELSE -->
+						class="file"
+					<!-- ENDIF -->	
+						>{arbo1.arbo2.arbo3.NOM} ({arbo1.arbo2.arbo3.MODULE})
+						<a href="{arbo1.arbo2.arbo3.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a>
+						<a href="{arbo1.arbo2.arbo3.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a>
+						<!-- IF arbo1.arbo2.arbo3.T_LEFT -->
+							<a href="{arbo1.arbo2.arbo3.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+						<!-- ENDIF -->
+						<!-- IF arbo1.arbo2.arbo3.T_RIGHT -->
+							<a href="{arbo1.arbo2.arbo3.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+						<!-- ENDIF -->
+						<a href="{arbo1.arbo2.arbo3.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+						<a href="{arbo1.arbo2.arbo3.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+							<!-- IF arbo1.arbo2.arbo3.T_IN_MENU -->
+								&nbsp;in menu&nbsp;
+							<!-- ELSE -->
+								&nbsp;<strike>in menu</strike>&nbsp;
+							<!-- ENDIF -->
+							<!-- IF arbo1.arbo2.arbo3.T_PUBLIER -->
+								|&nbsp;online
+							<!-- ELSE -->
+								|&nbsp;offline
+							<!-- ENDIF -->
+							|&nbsp;droits :&nbsp;{arbo1.arbo2.arbo3.DROITS}
+						</span>
+						
+							<!-- IF arbo1.arbo2.arbo3.T_CHILDREN -->
+								<ul>
+								<!-- BEGIN arbo4 -->
+									<li><span 
+								<!-- IF arbo1.arbo2.arbo3.arbo4.T_CHILDREN -->
+									class="folder"
+								<!-- ELSE -->
+									class="file"
+								<!-- ENDIF -->	
+									>{arbo1.arbo2.arbo3.arbo4.NOM} ({arbo1.arbo2.arbo3.arbo4.MODULE})
+									<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a>
+									<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a>
+									<!-- IF arbo1.arbo2.arbo3.arbo4.T_LEFT -->
+										<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+									<!-- ENDIF -->
+									<!-- IF arbo1.arbo2.arbo3.arbo4.T_RIGHT -->
+										<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+									<!-- ENDIF -->
+									<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+									<a href="{arbo1.arbo2.arbo3.arbo4.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+										<!-- IF arbo1.arbo2.arbo3.arbo4.T_IN_MENU -->
+											&nbsp;in menu&nbsp;
+										<!-- ELSE -->
+											&nbsp;<strike>in menu</strike>&nbsp;
+										<!-- ENDIF -->
+										<!-- IF arbo1.arbo2.arbo3.arbo4.T_PUBLIER -->
+											|&nbsp;online&nbsp;
+										<!-- ELSE -->
+											|&nbsp;offline&nbsp;
+										<!-- ENDIF -->
+										|&nbsp;droits :&nbsp;{arbo1.arbo2.arbo3.arbo4.DROITS}
+									</span>
+									
+									<!-- IF arbo1.arbo2.arbo3.arbo4.T_CHILDREN -->
+									<ul>
+									<!-- BEGIN arbo5 -->
+											<li><span 
+										<!-- IF arbo1.arbo2.arbo3.arbo4.arbo5.T_CHILDREN -->
+											class="folder"
+										<!-- ELSE -->
+											class="file"
+										<!-- ENDIF -->	
+											>{arbo1.arbo2.arbo3.arbo4.arbo5.NOM} ({arbo1.arbo2.arbo3.arbo4.arbo5.MODULE})
+											<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a>
+											<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a>
+											<!-- IF arbo1.arbo2.arbo3.arbo4.arbo5.T_LEFT -->
+												<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+											<!-- ENDIF -->
+											<!-- IF arbo1.arbo2.arbo3.arbo4.arbo5.T_RIGHT -->
+												<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+											<!-- ENDIF -->
+											<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a>
+											<a href="{arbo1.arbo2.arbo3.arbo4.arbo5.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a>
+												<!-- IF arbo1.arbo2.arbo3.arbo4.arbo5.T_IN_MENU -->
+													&nbsp;in menu&nbsp;
+												<!-- ELSE -->
+													&nbsp;<strike>in menu</strike>&nbsp;
+												<!-- ENDIF -->
+												<!-- IF arbo1.arbo2.arbo3.arbo4.arbo5.T_PUBLIER -->
+													|&nbsp;online&nbsp;
+												<!-- ELSE -->
+													|&nbsp;offline&nbsp;
+												<!-- ENDIF -->
+												|&nbsp;droits :&nbsp;{arbo1.arbo2.arbo3.arbo4.arbo5.DROITS}
+											</span>
+											
+												<!-- <ul>
+												
+												
+												
+												</ul>
+											 -->
+											
+											
+											</li>
+										<!-- END arbo5 -->	
+										
+										
+										</ul>
+										<!-- ENDIF -->
+									
+									
+									</li>
+								<!-- END arbo4 -->	
+								
+								
+								</ul>
+								<!-- ENDIF -->
+						
+						
+						</li>
+					<!-- END arbo3 -->	
+					
+					
+					</ul>
+					<!-- ENDIF -->
+				
+				
+				
+				</li>
+			<!-- END arbo2 -->		
+			</ul>
+	
+		</li>
+	<!-- END arbo1 -->
+	</ul>
+		
+	
+	
+	<!-- BEGIN arbo1 -->
+	<tr><td colspan="5"><br/><em><img src="design/defaut/images/drapeau_{arbo1.ID}.png" alt="{arbo1.NAME}"/>  {arbo1.NAME}</em> 
+		<a href="{arbo1.LINK_DELETE}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></td>
+		<td colspan="7"></td>
+	</tr>
+		
+				
+			<!-- BEGIN arbo2 -->
+				<tr class="block{arbo1.arbo2.BLOCK}">
+					<td>
+						{arbo1.arbo2.INDENT}
+						<!-- dIF arbo1.arbo2.T_CHILDREN -->
+						<!-- <img src="design/defaut/images/plus.png" alt="id"/>  -->
+						<!-- dENDIF -->
+						{arbo1.arbo2.NOM}
+					</td>
+					<td>{arbo1.arbo2.MODULE}</td>
+					<td><a href="{arbo1.arbo2.LIEN_REMONTER}" title="Remonter"><img src="design/defaut/images/arrow_up.png" alt="Remonter"/></a></td>
+					<td><a href="{arbo1.arbo2.LIEN_DESCENDRE}" title="Descendre"><img src="design/defaut/images/arrow_down.png" alt="Descendre"/></a></td>
+					<td>
+						<!-- IF arbo1.arbo2.T_LEFT -->
+						<a href="{arbo1.arbo2.LIEN_GAUCHE}" title="Décaler à gauche au-dessus de l'élément précédant"><img src="design/defaut/images/arrow_left.png" alt="Gauche"/></a> 
+						<!-- ENDIF -->
+					</td>
+					<td>
+						<!-- IF arbo1.arbo2.T_RIGHT -->
+						<a href="{arbo1.arbo2.LIEN_DROITE}" title="Décaler à droite en dessous de l'élément suivant"><img src="design/defaut/images/arrow_right.png" alt="Droite"/></a> 
+						<!-- ENDIF -->
+					</td>
+					
+					
+					<td><a href="{arbo1.arbo2.LIEN_EDITER}" title="Editer"><img src="design/defaut/images/editer-page.png" alt="Editer"/></a></td>
+					
+					<td><a href="{arbo1.arbo2.LIEN_SUPPRIMER}" title="Supprimer"><img src="design/defaut/images/supprimer-page.png" alt="Supprimer"/></a></td>
+						
+					<!-- IF arbo1.arbo2.T_IN_MENU -->
+						<td>&nbsp;oui&nbsp;</td>
+					<!-- ELSE -->
+						<td>&nbsp;non&nbsp;</td>
+					<!-- ENDIF -->
+					<!-- IF arbo1.arbo2.T_PUBLIER -->
+						<td>&nbsp;oui&nbsp;</td>
+					<!-- ELSE -->
+						<td>&nbsp;non&nbsp;</td>
+					<!-- ENDIF -->
+					
+					
+					<td>&nbsp;&nbsp;{arbo1.arbo2.DROITS}</td>
+
+					
+
+				</tr>
+			<!-- END arbo2 -->		
+					
+					
+
+			
+
+
+	<!-- END arbo1 -->
+	
+
+
+</table>
+
+
+	
+	{CONTENU}
+</div><!-- #principal --> 
